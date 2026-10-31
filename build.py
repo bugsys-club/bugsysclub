@@ -43,7 +43,7 @@ TEXTES = {
         ],
         "jazz_eyebrow": "Le jazz",
         "jazz_titre": "Le jazz en signature",
-        "jazz_alt": ["Scène de jazz tamisée : contrebasse, batterie, piano et micro à la lueur des bougies", "Peinture d’une chanteuse de jazz accompagnée d’un pianiste et d’un contrebassiste"],
+        "jazz_alt": ["Scène de jazz tamisée : contrebasse, batterie, piano et micro à la lueur des bougies", "Peinture d’une chanteuse de jazz accompagnée d’un pianiste et d’un contrebassiste", "Club de jazz art déco : chanteuse sur scène, danseurs et banquettes de velours rouge"],
         "jazz_intro": "Le Cameroun a donné au jazz quelques-unes de ses plus grandes voix. Chez Bugsy’s, on dîne au son d’un trio, puis la nuit commence.",
         "rdv": [("Jeudis Jazz · 20h – 23h", "Trio afro-jazz et soul pendant le dîner, puis le DJ prend le relais."), ("Galerie tournante", "Peintres et sculpteurs camerounais aux murs, œuvres à vendre."), ("Vernissage · un mercredi par mois", "Soirée sur invitation autour de l’artiste exposé.")],
         "club_eyebrow": "Le club",
@@ -87,7 +87,7 @@ TEXTES = {
         ],
         "jazz_eyebrow": "Jazz",
         "jazz_titre": "Jazz at the heart",
-        "jazz_alt": ["Dimly lit jazz stage: double bass, drums, piano and microphone by candlelight", "Painting of a jazz singer with a pianist and a double bass player"],
+        "jazz_alt": ["Dimly lit jazz stage: double bass, drums, piano and microphone by candlelight", "Painting of a jazz singer with a pianist and a double bass player", "Art deco jazz club: singer on stage, dancers and red velvet banquettes"],
         "jazz_intro": "Cameroon has given jazz some of its greatest voices. At Bugsy’s, dinner comes with a live trio, and then the night begins.",
         "rdv": [("Jazz Thursdays · 8pm – 11pm", "An afro-jazz and soul trio over dinner, then the DJ takes over."), ("Rotating gallery", "Cameroonian painters and sculptors on the walls, works for sale."), ("Opening night · one Wednesday a month", "An invitation-only evening around the featured artist.")],
         "club_eyebrow": "The club",
@@ -206,6 +206,7 @@ def page(t):
   <div class="jazz-photos">
     <img src="{d}assets/img/jazz-scene.jpg" alt="{t['jazz_alt'][0]}" loading="lazy">
     <img src="{d}assets/img/jazz-peinture.jpg" alt="{t['jazz_alt'][1]}" loading="lazy">
+    <img src="{d}assets/img/jazz-club.jpg" alt="{t['jazz_alt'][2]}" loading="lazy">
   </div>
 </div></div></section>
 
