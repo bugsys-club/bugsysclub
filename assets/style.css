@@ -124,14 +124,12 @@ a:hover { color: var(--or-clair); }
   .galerie img:first-child { grid-column: span 2; grid-row: auto; }
 }
 .contact .fondateur { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--or); }
-.jazz-photos { display: grid; grid-template-columns: 1.15fr 1fr; gap: 12px; align-items: end; }
+.jazz-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
 .jazz-photos img { width: 100%; object-fit: cover; border: 1px solid var(--filet); }
 .jazz-photos { max-width: 480px; justify-self: center; }
-.jazz-photos img:first-child { height: 360px; }
-.jazz-photos img:last-child { height: 290px; }
+.jazz-photos img { height: 320px; }
 @media (max-width: 760px) {
-  .jazz-photos img:first-child { height: 260px; }
-  .jazz-photos img:last-child { height: 210px; }
+  .jazz-photos img { height: 230px; }
 }
 .racines { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; }
 .racines img { width: 100%; height: 340px; object-fit: cover; border: 1px solid var(--filet); }
