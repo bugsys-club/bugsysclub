@@ -1,0 +1,126 @@
+:root {
+  --noir: #0d0b09;
+  --noir-2: #16130f;
+  --or: #c9a45c;
+  --or-clair: #f3de9c;
+  --bronze: #7a5c24;
+  --ivoire: #efe6d2;
+  --texte: #d9ccae;
+  --discret: #b5a887;
+  --filet: #4a3d28;
+  --display: "Limelight", Georgia, serif;
+  --sigle: "Monoton", Georgia, serif;
+  --sans: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Cormorant Garamond", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--noir);
+  color: var(--texte);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--or); }
+a:hover { color: var(--or-clair); }
+
+.wrap { width: min(1160px, 100% - 40px); margin-inline: auto; }
+
+/* En-tête */
+.header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(13, 11, 9, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--filet);
+}
+.header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 68px; }
+.brand { font-family: var(--display); font-size: 26px; letter-spacing: 3px; color: var(--or); text-decoration: none; }
+.nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; justify-content: flex-end; }
+.nav a { color: var(--ivoire); text-decoration: none; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; padding: 8px 0; }
+.nav a:hover { color: var(--or); }
+.nav .lang { border: 1px solid var(--or); color: var(--or); padding: 6px 10px; }
+
+/* Héros */
+.hero {
+  min-height: calc(100vh - 68px);
+  display: grid; place-items: center; text-align: center;
+  padding: 64px 0;
+  background: radial-gradient(circle at 50% 40%, #1f1a14 0%, var(--noir) 70%);
+}
+.hero-frame { border: 1px solid var(--or); padding: 10px; }
+.hero-inner { border: 1px solid var(--filet); padding: clamp(36px, 7vw, 72px) clamp(20px, 8vw, 110px); }
+.hero svg { width: min(220px, 50vw); height: auto; margin: 0 auto 20px; }
+.hero h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(54px, 11vw, 120px); line-height: 1; letter-spacing: 8px; color: var(--or); }
+.hero .club { margin: 14px 0 0; font-weight: 600; font-size: clamp(16px, 2.6vw, 22px); letter-spacing: 12px; color: var(--ivoire); }
+.hero .sous { margin: 14px 0 0; font-size: 14px; letter-spacing: 6px; text-transform: uppercase; color: var(--discret); }
+.hero .accroche { margin: 32px auto 0; max-width: 560px; font-family: var(--serif); font-style: italic; font-size: 26px; line-height: 1.4; color: var(--texte); }
+.btn {
+  display: inline-block; margin-top: 32px; padding: 14px 30px;
+  border: 1px solid var(--or); color: var(--or); text-decoration: none;
+  font-size: 14px; letter-spacing: 4px; text-transform: uppercase;
+}
+.btn:hover { background: var(--or); color: var(--noir); }
+
+/* Sections */
+.section { padding: clamp(72px, 10vw, 120px) 0; border-top: 1px solid var(--filet); }
+.section.clair { background: var(--ivoire); color: #3f362b; }
+.eyebrow { margin: 0 0 14px; font-size: 14px; letter-spacing: 7px; font-weight: 600; text-transform: uppercase; color: var(--or); }
+.clair .eyebrow { color: var(--bronze); }
+.section h2 { margin: 0 0 22px; font-family: var(--display); font-weight: 400; font-size: clamp(36px, 5.5vw, 56px); line-height: 1.1; color: var(--ivoire); }
+.clair h2 { color: var(--noir); }
+.intro { margin: 0 0 44px; max-width: 760px; font-family: var(--serif); font-style: italic; font-size: 24px; line-height: 1.45; }
+
+.trois { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 36px; }
+.temps { border-top: 4px double var(--or); padding-top: 24px; }
+.clair .temps { border-color: var(--bronze); }
+.temps .heure { font-size: 14px; letter-spacing: 4px; font-weight: 600; color: var(--or); }
+.clair .temps .heure { color: var(--bronze); }
+.temps h3 { margin: 10px 0 8px; font-family: var(--display); font-weight: 400; font-size: 32px; color: var(--ivoire); }
+.clair .temps h3 { color: var(--noir); }
+.temps p { margin: 0; }
+
+/* Galerie */
+.galerie { display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 280px 280px; gap: 12px; }
+.galerie img { width: 100%; height: 100%; object-fit: cover; border: 1px solid var(--filet); }
+.galerie img:first-child { grid-row: span 2; }
+
+/* Carte */
+.carte { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 44px; }
+.carte h3 { margin: 0 0 18px; padding: 8px 0 6px; text-align: center; font-size: 15px; letter-spacing: 6px; font-weight: 600; text-transform: uppercase; color: var(--or); border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet); }
+.plat { margin: 0 0 16px; }
+.plat strong { display: block; color: var(--ivoire); font-weight: 600; }
+.plat span { font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--discret); }
+
+/* Jazz */
+.jazz { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: center; }
+.jazz svg { width: 100%; height: auto; max-width: 480px; margin-inline: auto; }
+.rdv { margin: 0 0 22px; }
+.rdv b { display: block; font-size: 14px; letter-spacing: 4px; color: var(--or); text-transform: uppercase; }
+
+/* Cartes membre */
+.membres { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
+.carte-membre { aspect-ratio: 85.6 / 54; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.carte-membre .nom { font-family: var(--display); font-size: 26px; letter-spacing: 2px; }
+.carte-membre .niveau { font-size: 14px; letter-spacing: 6px; font-weight: 600; }
+.m-membre { background: var(--ivoire); color: #1a1612; border: 1px solid var(--bronze); }
+.m-membre .niveau { color: var(--bronze); }
+.m-gold { background: linear-gradient(135deg, #f3de9c 0%, #c9a45c 40%, #9c7a34 75%, #e7cf8b 100%); color: #1a140c; }
+.m-black { background: #0a0908; color: var(--or); border: 1px solid var(--or); }
+
+/* Contact */
+.contact { text-align: center; }
+.contact .intro { margin-inline: auto; }
+.contact .lieu { font-size: 14px; letter-spacing: 6px; text-transform: uppercase; color: var(--discret); }
+
+.footer { padding: 36px 0; border-top: 1px solid var(--filet); text-align: center; font-size: 13px; letter-spacing: 3px; color: var(--discret); }
+
+@media (max-width: 760px) {
+  .nav a:not(.lang) { display: none; }
+  .galerie { grid-template-columns: 1fr 1fr; grid-template-rows: 240px 180px 180px; }
+  .galerie img:first-child { grid-column: span 2; grid-row: auto; }
+}
+.contact .fondateur { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--or); }
