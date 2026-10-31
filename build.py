@@ -33,9 +33,6 @@ TEXTES = {
             ("Jeudi – samedi, 23h – 4h", "Le Club", "DJ résident et service bouteilles : la salle du dîner devient la piste."),
         ],
         "galerie_alt": ["Grand plateau de viandes braisées, riz rouge et sauces maison", "Poisson braisé, salsa de poivrons et citron vert", "Cocktail servi dans une timbale en cuivre", "Verre de vin rouge au-dessus d’une table garnie", "Champagnes sur une table du lounge"],
-        "racines_eyebrow": "Nos racines",
-        "racines_titre": "Le goût du continent",
-        "racines_intro": "Les braises de la savane, les poissons de la côte : la carte de Bugsy’s puise dans les saveurs de l’Afrique.",
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
         "carte_eyebrow": "La carte",
         "carte_titre": "Le grill, relevé de touches africaines",
@@ -80,9 +77,6 @@ TEXTES = {
             ("Thursday – Saturday, 11pm – 4am", "The Club", "Resident DJ and bottle service: the dining room becomes the dance floor."),
         ],
         "galerie_alt": ["Platter of braised meats, red rice and house sauces", "Braised fish with pepper salsa and lime", "Cocktail served in a copper cup", "Glass of red wine above a laid table", "Champagne on a lounge table"],
-        "racines_eyebrow": "Our roots",
-        "racines_titre": "A taste of the continent",
-        "racines_intro": "Embers from the savannah, fish from the coast: the Bugsy’s menu draws on the flavours of Africa.",
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
         "carte_eyebrow": "The menu",
         "carte_titre": "The grill, with African touches",
@@ -191,15 +185,10 @@ def page(t):
 
 <section class="section"><div class="wrap"><div class="galerie">{galerie}</div></div></section>
 
-<section class="section clair" id="racines"><div class="wrap">
-  <p class="eyebrow">{t['racines_eyebrow']}</p>
-  <h2>{t['racines_titre']}</h2>
-  <p class="intro">{t['racines_intro']}</p>
-  <div class="racines">
+<section class="section illustrations"><div class="wrap"><div class="racines">
     <img src="{d}assets/img/savane.jpg" alt="{t['racines_alt'][0]}" loading="lazy">
     <img src="{d}assets/img/barques.jpg" alt="{t['racines_alt'][1]}" loading="lazy">
-  </div>
-</div></section>
+</div></div></section>
 
 <section class="section" id="carte"><div class="wrap">
   <p class="eyebrow">{t['carte_eyebrow']}</p>
