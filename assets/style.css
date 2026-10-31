@@ -132,3 +132,9 @@ a:hover { color: var(--or-clair); }
   .jazz-photos img:first-child { height: 340px; }
   .jazz-photos img:last-child { height: 280px; }
 }
+.racines { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; }
+.racines img { width: 100%; height: 480px; object-fit: cover; border: 1px solid var(--filet); }
+@media (max-width: 760px) {
+  .racines { grid-template-columns: 1fr; }
+  .racines img { height: 300px; }
+}
