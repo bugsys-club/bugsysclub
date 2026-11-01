@@ -166,6 +166,10 @@ CARTE_FR = [
     ("Le club · jeudi à samedi, 23h – 4h", "Softs et glace inclus avec chaque bouteille · Entrée offerte aux clients du dîner", [
       ("Champagne brut", "", "75 000"), ("Champagne blanc de blancs", "", "110 000"), ("Champagne rosé", "", "120 000"),
       ("Vodka premium, 70 cl", "", "60 000"), ("Whisky 12 ans, 70 cl", "", "70 000"), ("Cognac VSOP, 70 cl", "", "85 000")]),
+    ("Grandes maisons", "Au salon ou au club", [
+      ("Dom Pérignon", "Champagne millésimé, 75 cl", "450 000"),
+      ("Petrus", "Pomerol, 75 cl", "sur demande"),
+      ("Lise Baccara Extra", "Cognac, 70 cl", "250 000")]),
   ]),
 ]
 CARTE_EN = [
@@ -214,6 +218,10 @@ CARTE_EN = [
     ("The club · Thursday to Saturday, 11pm – 4am", "Soft drinks and ice included with every bottle · Free entry for dinner guests", [
       ("Brut champagne", "", "75 000"), ("Blanc de blancs champagne", "", "110 000"), ("Rosé champagne", "", "120 000"),
       ("Premium vodka, 70 cl", "", "60 000"), ("12-year-old whisky, 70 cl", "", "70 000"), ("Cognac VSOP, 70 cl", "", "85 000")]),
+    ("Prestige bottles", "In the lounge or at the club", [
+      ("Dom Pérignon", "Vintage champagne, 75 cl", "450 000"),
+      ("Petrus", "Pomerol, 75 cl", "on request"),
+      ("Lise Baccara Extra", "Cognac, 70 cl", "250 000")]),
   ]),
 ]
 
