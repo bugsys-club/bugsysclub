@@ -48,6 +48,7 @@ TEXTES = {
         "jazz_alt": ["Scène de jazz tamisée : contrebasse, batterie, piano et micro à la lueur des bougies", "Peinture d’une chanteuse de jazz accompagnée d’un pianiste et d’un contrebassiste", "Club de jazz art déco : chanteuse sur scène, danseurs et banquettes de velours rouge"],
         "jazz_intro": "Le Cameroun a donné au jazz quelques-unes de ses plus grandes voix. Chez Bugsy’s, on dîne au son d’un trio, puis la nuit commence.",
         "rdv": [("Jeudis Jazz · 20h – 23h", "Trio afro-jazz et soul pendant le dîner, puis le DJ prend le relais."), ("Galerie tournante", "Peintres et sculpteurs camerounais aux murs, œuvres à vendre."), ("Vernissage · un mercredi par mois", "Soirée sur invitation autour de l’artiste exposé.")],
+        "club_alt": "Peinture d’une danseuse en robe rouge tourbillonnante, à la lueur des bougies",
         "club_eyebrow": "Le club",
         "club_titre": "Quand la nuit commence",
         "club_intro": "Du jeudi au samedi, de 23h à 4h : DJ résident, service bouteilles et entrée offerte aux clients du dîner.",
@@ -94,6 +95,7 @@ TEXTES = {
         "jazz_alt": ["Dimly lit jazz stage: double bass, drums, piano and microphone by candlelight", "Painting of a jazz singer with a pianist and a double bass player", "Art deco jazz club: singer on stage, dancers and red velvet banquettes"],
         "jazz_intro": "Cameroon has given jazz some of its greatest voices. At Bugsy’s, dinner comes with a live trio, and then the night begins.",
         "rdv": [("Jazz Thursdays · 8pm – 11pm", "An afro-jazz and soul trio over dinner, then the DJ takes over."), ("Rotating gallery", "Cameroonian painters and sculptors on the walls, works for sale."), ("Opening night · one Wednesday a month", "An invitation-only evening around the featured artist.")],
+        "club_alt": "Painting of a dancer in a swirling red dress, by candlelight",
         "club_eyebrow": "The club",
         "club_titre": "When the night begins",
         "club_intro": "Thursday to Saturday, 11pm to 4am: resident DJ, bottle service and free entry for dinner guests.",
@@ -336,7 +338,7 @@ def page(t):
 </div></section>
 
 <section class="section" id="club"><div class="wrap"><div class="jazz">
-  <img src="{d}assets/img/champagne.jpg" alt="{t['galerie_alt'][4]}" loading="lazy">
+  <img class="club-image" src="{d}assets/img/club-danseuse.jpg" alt="{t['club_alt']}" loading="lazy">
   <div>
     <p class="eyebrow">{t['club_eyebrow']}</p>
     <h2>{t['club_titre']}</h2>
