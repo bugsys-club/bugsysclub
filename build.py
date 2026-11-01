@@ -63,6 +63,8 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroun",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Fondé par Guy Erick Tamokwe",
+        "form": {"nom": "Nom", "email": "E-mail", "objet": "Objet", "objets": ["Réservation", "Privatisation", "Carte de membre", "Autre demande"], "message": "Message", "envoyer": "Envoyer", "merci": "Merci, votre message a bien été envoyé. Nous vous répondrons très vite.", "erreur": "L’envoi n’a pas abouti. Merci de réessayer dans un instant."},
+        "contact_intro_form": "Réservations, privatisations et cartes de membre : écrivez-nous, nous vous répondrons personnellement.",
     },
     "en": {
         "lang": "en", "dossier": "../", "autre": "../", "autre_label": "FR",
@@ -111,6 +113,8 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroon",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Founded by Guy Erick Tamokwe",
+        "form": {"nom": "Name", "email": "Email", "objet": "Subject", "objets": ["Booking", "Private event", "Membership card", "Other enquiry"], "message": "Message", "envoyer": "Send", "merci": "Thank you, your message has been sent. We will reply very soon.", "erreur": "Your message could not be sent. Please try again in a moment."},
+        "contact_intro_form": "Bookings, private events and membership cards: write to us and we will reply personally.",
     },
 }
 
@@ -212,6 +216,39 @@ CARTE_EN = [
 ]
 
 CARTES = {"fr": CARTE_FR, "en": CARTE_EN}
+
+# Formspree : identifiant du formulaire (ex. "xyzabcde"). Vide = formulaire masqué.
+FORMSPREE_ID = ""
+
+def formulaire(t):
+    if not FORMSPREE_ID:
+        return ""
+    f = t["form"]
+    options = "".join(f'<option>{o}</option>' for o in f["objets"])
+    return f'''<form class="formulaire" action="https://formspree.io/f/{FORMSPREE_ID}" method="POST" data-merci="{f['merci']}" data-erreur="{f['erreur']}">
+    <div class="champs">
+      <label>{f['nom']}<input type="text" name="nom" required autocomplete="name"></label>
+      <label>{f['email']}<input type="email" name="email" required autocomplete="email"></label>
+    </div>
+    <label>{f['objet']}<select name="objet">{options}</select></label>
+    <label>{f['message']}<textarea name="message" rows="5" required></textarea></label>
+    <input type="text" name="_gotcha" class="piege" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit">{f['envoyer']}</button>
+    <p class="retour" role="status"></p>
+  </form>
+  <script>
+  document.querySelectorAll('.formulaire').forEach(function (form) {{
+    form.addEventListener('submit', function (e) {{
+      e.preventDefault();
+      var retour = form.querySelector('.retour'), bouton = form.querySelector('button');
+      bouton.disabled = true;
+      fetch(form.action, {{ method: 'POST', body: new FormData(form), headers: {{ 'Accept': 'application/json' }} }})
+        .then(function (r) {{ if (!r.ok) throw r; form.reset(); retour.textContent = form.dataset.merci; }})
+        .catch(function () {{ retour.textContent = form.dataset.erreur; }})
+        .finally(function () {{ bouton.disabled = false; }});
+    }});
+  }});
+  </script>'''
 
 ANCRES = ["concept", "carte", "jazz", "galerie", "club", "membres", "contact"]
 PHOTOS = ["plateau", "poisson", "cocktail", "vin", "champagne"]
@@ -367,7 +404,8 @@ def page(t):
 <section class="section contact" id="contact"><div class="wrap">
   <p class="eyebrow">{t['contact_eyebrow']}</p>
   <h2>{t['contact_titre']}</h2>
-  <p class="intro">{t['contact_intro']}</p>
+  <p class="intro">{t['contact_intro_form'] if FORMSPREE_ID else t['contact_intro']}</p>
+  {formulaire(t)}
   <p class="lieu">{t['lieu']}</p>
   <p class="fondateur">{t['fondateur']}</p>
 </div></section>

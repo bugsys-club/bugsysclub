@@ -175,3 +175,16 @@ a:hover { color: var(--or-clair); }
   .encart-musique li + li { border-left: none; border-top: 1px solid #c9b993; padding-top: 14px; }
 }
 .encart-musique li span i { font-style: normal; white-space: nowrap; }
+
+/* Formulaire de contact */
+.formulaire { margin: 0 auto 44px; max-width: 640px; display: flex; flex-direction: column; gap: 18px; text-align: left; }
+.formulaire .champs { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.formulaire label { display: flex; flex-direction: column; gap: 8px; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--or); }
+.formulaire input, .formulaire select, .formulaire textarea { font: inherit; font-size: 17px; letter-spacing: 0; text-transform: none; color: var(--ivoire); background: var(--noir-2); border: 1px solid var(--filet); padding: 12px 14px; border-radius: 0; }
+.formulaire input:focus, .formulaire select:focus, .formulaire textarea:focus { outline: none; border-color: var(--or); }
+.formulaire textarea { resize: vertical; }
+.formulaire .btn { align-self: center; margin-top: 8px; background: none; cursor: pointer; font-family: var(--sans); }
+.formulaire .btn:disabled { opacity: 0.5; cursor: wait; }
+.formulaire .piege { position: absolute; left: -9999px; }
+.formulaire .retour { margin: 0; min-height: 1.6em; text-align: center; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--or-clair); }
+@media (max-width: 760px) { .formulaire .champs { grid-template-columns: 1fr; } }
