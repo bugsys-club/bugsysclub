@@ -190,9 +190,9 @@ a:hover { color: var(--or-clair); }
 @media (max-width: 760px) { .formulaire .champs { grid-template-columns: 1fr; } }
 
 /* En cuisine */
-.cuisine { display: grid; grid-template-columns: repeat(4, 130px); gap: 12px; justify-content: center; }
-.cuisine img { width: 130px; height: 160px; object-fit: cover; border: 1px solid var(--filet); }
+.cuisine { display: grid; grid-template-columns: repeat(4, 90px); gap: 10px; justify-content: center; }
+.cuisine img { width: 90px; height: 110px; object-fit: cover; border: 1px solid var(--filet); }
 @media (max-width: 760px) {
-  .cuisine { grid-template-columns: repeat(4, 76px); gap: 8px; }
-  .cuisine img { width: 76px; height: 94px; }
+  .cuisine { grid-template-columns: repeat(4, 60px); gap: 8px; }
+  .cuisine img { width: 60px; height: 74px; }
 }
