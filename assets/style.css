@@ -196,3 +196,17 @@ a:hover { color: var(--or-clair); }
   .cuisine { grid-template-columns: repeat(4, 48px); gap: 6px; }
   .cuisine img { width: 48px; height: 58px; }
 }
+
+/* Sommaire (téléphone) */
+.burger { display: none; font: inherit; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--ivoire); background: none; border: 1px solid var(--filet); padding: 7px 10px; cursor: pointer; }
+.sommaire { position: fixed; inset: 0; z-index: 20; background: var(--noir); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 32px 16px; border: 1px solid var(--or); outline: 1px solid var(--filet); outline-offset: -10px; }
+.sommaire[hidden] { display: none; }
+.sommaire-titre { margin: 0; font-size: 13px; letter-spacing: 7px; text-transform: uppercase; color: var(--or); }
+.sommaire ol { list-style: none; margin: 0; padding: 0; counter-reset: s; text-align: center; }
+.sommaire li { counter-increment: s; }
+.sommaire li a { display: block; padding: 10px 0; font-family: var(--display); font-size: 30px; color: var(--ivoire); text-decoration: none; }
+.sommaire li a::before { content: counter(s, upper-roman) " · "; font-family: var(--sans); font-size: 13px; letter-spacing: 3px; color: var(--or); vertical-align: middle; }
+.sommaire li a:hover { color: var(--or); }
+.sommaire .fermer { font: inherit; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--or); background: none; border: 1px solid var(--or); padding: 10px 22px; cursor: pointer; }
+@media (max-width: 760px) { .burger { display: inline-block; } }
+[id] { scroll-margin-top: 68px; }

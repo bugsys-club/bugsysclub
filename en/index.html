@@ -24,8 +24,22 @@
 <body>
 <header class="header"><div class="wrap">
   <a class="brand" href="#top">BUGSY’S</a>
-  <nav class="nav"><a href="#concept">The concept</a><a href="#carte">The menu</a><a href="#jazz">Jazz</a><a href="#galerie">The gallery</a><a href="#club">The club</a><a href="#membres">Members</a><a href="#contact">Contact</a><a class="lang" href="../" hreflang="fr">FR</a></nav>
+  <nav class="nav"><a href="#concept">The concept</a><a href="#carte">The menu</a><a href="#jazz">Jazz</a><a href="#galerie">The gallery</a><a href="#club">The club</a><a href="#membres">Members</a><a href="#contact">Contact</a><a class="lang" href="../" hreflang="fr">FR</a><button class="burger" type="button" aria-expanded="false" aria-controls="sommaire">Contents</button></nav>
 </div></header>
+<div class="sommaire" id="sommaire" hidden>
+  <p class="sommaire-titre">Contents</p>
+  <ol><li><a href="#concept">The concept</a></li><li><a href="#carte">The menu</a></li><li><a href="#jazz">Jazz</a></li><li><a href="#galerie">The gallery</a></li><li><a href="#club">The club</a></li><li><a href="#membres">Members</a></li><li><a href="#contact">Contact</a></li></ol>
+  <button class="fermer" type="button">Close</button>
+</div>
+<script>
+(function () {
+  var b = document.querySelector('.burger'), s = document.getElementById('sommaire');
+  function ouvrir(o) { s.hidden = !o; b.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; }
+  b.addEventListener('click', function () { ouvrir(s.hidden); });
+  s.querySelector('.fermer').addEventListener('click', function () { ouvrir(false); });
+  s.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { ouvrir(false); }); });
+})();
+</script>
 <main id="top">
 <section class="hero"><div class="wrap"><div class="hero-frame"><div class="hero-inner">
   <svg viewBox="0 0 220 220" role="img" aria-label="Monogramme BS de Bugsy’s Social Club">

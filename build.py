@@ -328,8 +328,22 @@ def page(t):
 <body>
 <header class="header"><div class="wrap">
   <a class="brand" href="#top">BUGSY’S</a>
-  <nav class="nav">{nav}<a class="lang" href="{t['autre']}" hreflang="{'en' if t['lang']=='fr' else 'fr'}">{t['autre_label']}</a></nav>
+  <nav class="nav">{nav}<a class="lang" href="{t['autre']}" hreflang="{'en' if t['lang']=='fr' else 'fr'}">{t['autre_label']}</a><button class="burger" type="button" aria-expanded="false" aria-controls="sommaire">{'Sommaire' if t['lang']=='fr' else 'Contents'}</button></nav>
 </div></header>
+<div class="sommaire" id="sommaire" hidden>
+  <p class="sommaire-titre">{'Sommaire' if t['lang']=='fr' else 'Contents'}</p>
+  <ol>{"".join(f'<li><a href="#{a}">{l}</a></li>' for a, l in zip(ANCRES, t["nav"]))}</ol>
+  <button class="fermer" type="button">{'Fermer' if t['lang']=='fr' else 'Close'}</button>
+</div>
+<script>
+(function () {{
+  var b = document.querySelector('.burger'), s = document.getElementById('sommaire');
+  function ouvrir(o) {{ s.hidden = !o; b.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; }}
+  b.addEventListener('click', function () {{ ouvrir(s.hidden); }});
+  s.querySelector('.fermer').addEventListener('click', function () {{ ouvrir(false); }});
+  s.querySelectorAll('a').forEach(function (a) {{ a.addEventListener('click', function () {{ ouvrir(false); }}); }});
+}})();
+</script>
 <main id="top">
 <section class="hero"><div class="wrap"><div class="hero-frame"><div class="hero-inner">
   {LOGO}
