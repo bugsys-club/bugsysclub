@@ -89,11 +89,20 @@ a:hover { color: var(--or-clair); }
 .galerie img:first-child { grid-row: span 2; }
 
 /* Carte */
-.carte { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 44px; }
+.carte { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 36px 52px; }
 .carte h3 { margin: 0 0 18px; padding: 8px 0 6px; text-align: center; font-size: 15px; letter-spacing: 6px; font-weight: 600; text-transform: uppercase; color: var(--or); border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet); }
-.plat { margin: 0 0 16px; }
-.plat strong { display: block; color: var(--ivoire); font-weight: 600; }
-.plat span { font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--discret); }
+.plat { margin: 0 0 14px; }
+.plat .ligne { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
+.plat strong { color: var(--ivoire); font-weight: 600; }
+.plat .prix { color: var(--or); font-weight: 600; white-space: nowrap; }
+.plat .desc { display: block; font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--discret); }
+.rubrique .note { margin: -6px 0 14px; font-size: 14px; letter-spacing: 1px; line-height: 1.6; color: var(--discret); text-align: center; }
+.volet { margin-top: 48px; padding-top: 36px; border-top: 4px double var(--or); }
+.volet:first-of-type { margin-top: 24px; }
+.volet-titre { margin: 0 0 30px; font-family: var(--display); font-size: clamp(28px, 4vw, 38px); color: var(--or); }
+.volet-titre span { font-family: var(--sans); font-size: 14px; letter-spacing: 4px; text-transform: uppercase; color: var(--discret); margin-left: 10px; }
+.volet .btn { margin-top: 18px; }
+.mention { margin: 44px 0 0; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--discret); text-align: center; }
 
 /* Jazz */
 .jazz { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: center; }

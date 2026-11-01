@@ -36,11 +36,8 @@ TEXTES = {
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
         "carte_eyebrow": "La carte",
         "carte_titre": "Le grill, relevé de touches africaines",
-        "carte": [
-            ("Le grill", [("Côte de bœuf maturée", "Pour deux, découpée en salle"), ("Filet de bœuf", "Sauce au poivre blanc de Penja"), ("Côtelettes d’agneau", "Marinade aux épices du marché"), ("Demi-poulet braisé façon DG", "Plantains mûrs, légumes croquants")]),
-            ("La mer", [("Bar braisé entier", "Salsa crue, citron vert, alloco"), ("Gambas grillées", "Beurre citronné, riz jollof"), ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc"), ("Le Plateau Bugsy’s", "Pour deux, gambas, poisson braisé, calamars")]),
-            ("Le bar", [("The Bugsy", "Bourbon, sirop de bissap, angostura"), ("Penja Old Fashioned", "Whisky, sirop au poivre de Penja, orange"), ("Copper Mule", "Vodka, gingembre frais, citron vert"), ("Bissap Royal", "Sirop de bissap maison, champagne brut")]),
-        ],
+        "carte_pdf": ["Télécharger la carte du restaurant (PDF)", "Télécharger la carte du bar et du club (PDF)"],
+        "carte_prix": "Prix en francs CFA, service compris · Allergènes sur demande · L’abus d’alcool est dangereux pour la santé",
         "jazz_eyebrow": "Le jazz",
         "jazz_titre": "Le jazz en signature",
         "jazz_alt": ["Scène de jazz tamisée : contrebasse, batterie, piano et micro à la lueur des bougies", "Peinture d’une chanteuse de jazz accompagnée d’un pianiste et d’un contrebassiste", "Club de jazz art déco : chanteuse sur scène, danseurs et banquettes de velours rouge"],
@@ -80,11 +77,8 @@ TEXTES = {
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
         "carte_eyebrow": "The menu",
         "carte_titre": "The grill, with African touches",
-        "carte": [
-            ("The grill", [("Dry-aged rib of beef", "For two, carved at the table"), ("Beef fillet", "White Penja pepper sauce"), ("Lamb cutlets", "Market spice marinade"), ("Half chicken, DG style", "Ripe plantain, crisp vegetables")]),
-            ("The sea", [("Whole braised sea bass", "Raw salsa, lime, alloco"), ("Grilled king prawns", "Lemon butter, jollof rice"), ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick"), ("The Bugsy’s platter", "For two, prawns, braised fish, squid")]),
-            ("The bar", [("The Bugsy", "Bourbon, hibiscus syrup, bitters"), ("Penja Old Fashioned", "Whisky, Penja pepper syrup, orange"), ("Copper Mule", "Vodka, fresh ginger, lime"), ("Bissap Royal", "House hibiscus syrup, brut champagne")]),
-        ],
+        "carte_pdf": ["Download the restaurant menu (PDF)", "Download the bar & club menu (PDF)"],
+        "carte_prix": "Prices in CFA francs, service included · Allergens on request · Please drink responsibly",
         "jazz_eyebrow": "Jazz",
         "jazz_titre": "Jazz at the heart",
         "jazz_alt": ["Dimly lit jazz stage: double bass, drums, piano and microphone by candlelight", "Painting of a jazz singer with a pianist and a double bass player", "Art deco jazz club: singer on stage, dancers and red velvet banquettes"],
@@ -105,6 +99,105 @@ TEXTES = {
         "fondateur": "Founded by Guy Erick Tamokwe",
     },
 }
+
+CARTE_FR = [
+  ("Le restaurant", "12h – 23h", [
+    ("Pour commencer", "", [
+      ("Tartare de bœuf au couteau", "Piment doux, câpres, frites maison", "8 500"),
+      ("Gambas flambées", "Beurre à l’ail et au gingembre frais", "9 000"),
+      ("Brochettes façon soya", "Bœuf épicé au grill, oignons croquants", "6 500"),
+      ("Avocat, crevettes, mangue", "Vinaigrette passion", "7 000")]),
+    ("Le grill", "Sauce au choix : poivre blanc de Penja · béarnaise · mbongo · piment maison", [
+      ("Entrecôte, 300 g", "", "15 000"),
+      ("Filet de bœuf, 250 g", "", "18 000"),
+      ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle", "45 000"),
+      ("Côtelettes d’agneau", "Marinade aux épices du marché", "16 000"),
+      ("Demi-poulet braisé façon DG", "Plantains mûrs, légumes croquants", "11 000")]),
+    ("La mer", "", [
+      ("Bar braisé entier", "Salsa crue, citron vert, alloco", "14 000"),
+      ("Gambas grillées, six pièces", "Beurre citronné, riz jollof", "18 000"),
+      ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "15 000"),
+      ("Le Plateau Bugsy’s", "Pour deux : gambas, poisson braisé, calamars, trois accompagnements", "48 000")]),
+    ("Accompagnements", "Frites maison · Alloco · Miondo · Riz jollof · Légumes grillés · Purée de patate douce", [
+      ("L’accompagnement", "", "2 500")]),
+    ("Desserts", "", [
+      ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "5 000"),
+      ("Cheesecake mangue-passion", "Biscuit sablé, coulis maison", "4 500"),
+      ("Beignets soufflés", "Caramel de bissap", "4 000")]),
+  ]),
+  ("Le café, le bar et le club", "8h – 4h", [
+    ("Le café · 8h – 11h", "", [
+      ("Espresso", "", "1 500"), ("Café filtre de l’Ouest", "", "2 000"), ("Cappuccino", "", "2 500"),
+      ("Toast avocat, œufs brouillés", "", "5 500"),
+      ("Petit-déjeuner Bugsy’s", "Viennoiserie, jus pressé, boisson chaude", "6 500")]),
+    ("Cocktails signature", "", [
+      ("The Bugsy", "Bourbon, sirop de bissap, angostura", "8 500"),
+      ("Flamingo", "Gin, passion, hibiscus, tonic", "7 500"),
+      ("Penja Old Fashioned", "Whisky, sirop au poivre de Penja, orange", "8 500"),
+      ("Copper Mule", "Vodka, gingembre frais, citron vert, timbale de cuivre", "7 000"),
+      ("Gold Rush Espresso", "Vodka, café de l’Ouest, liqueur de cacao", "8 000"),
+      ("Bissap Royal", "Sirop de bissap maison, champagne brut", "9 000")]),
+    ("Sans alcool", "", [
+      ("Foléré gingembre", "", "3 500"), ("Citronnade menthe", "", "3 500"),
+      ("Mangue-passion pressé", "", "4 000"), ("Copper Mule sans alcool", "", "4 500")]),
+    ("Vins et bière", "", [
+      ("Vin au verre", "", "5 000"), ("Bouteille de vin", "", "dès 25 000"),
+      ("Coupe de champagne", "", "12 000"), ("Bière", "", "2 000")]),
+    ("Le club · jeudi à samedi, 23h – 4h", "Softs et glace inclus avec chaque bouteille · Entrée offerte aux clients du dîner", [
+      ("Champagne brut", "", "75 000"), ("Champagne blanc de blancs", "", "110 000"), ("Champagne rosé", "", "120 000"),
+      ("Vodka premium, 70 cl", "", "60 000"), ("Whisky 12 ans, 70 cl", "", "70 000"), ("Cognac VSOP, 70 cl", "", "85 000")]),
+  ]),
+]
+CARTE_EN = [
+  ("The restaurant", "Noon – 11pm", [
+    ("To start", "", [
+      ("Hand-cut beef tartare", "Mild chilli, capers, house fries", "8 500"),
+      ("Flambéed king prawns", "Garlic and fresh ginger butter", "9 000"),
+      ("Soya-style skewers", "Spiced grilled beef, crispy onions", "6 500"),
+      ("Avocado, prawns, mango", "Passion fruit dressing", "7 000")]),
+    ("The grill", "Choice of sauce: white Penja pepper · béarnaise · mbongo · house chilli", [
+      ("Rib-eye, 300 g", "", "15 000"),
+      ("Beef fillet, 250 g", "", "18 000"),
+      ("Dry-aged rib of beef, 1 kg", "For two, carved at the table", "45 000"),
+      ("Lamb cutlets", "Market spice marinade", "16 000"),
+      ("Half chicken, DG style", "Ripe plantain, crisp vegetables", "11 000")]),
+    ("The sea", "", [
+      ("Whole braised sea bass", "Raw salsa, lime, alloco", "14 000"),
+      ("Grilled king prawns, six", "Lemon butter, jollof rice", "18 000"),
+      ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "15 000"),
+      ("The Bugsy’s platter", "For two: prawns, braised fish, squid, three sides", "48 000")]),
+    ("Sides", "House fries · Alloco · Miondo · Jollof rice · Grilled vegetables · Sweet potato mash", [
+      ("Each side", "", "2 500")]),
+    ("Desserts", "", [
+      ("Cameroonian cocoa fondant", "Molten centre, vanilla ice cream", "5 000"),
+      ("Mango-passion cheesecake", "Shortbread base, house coulis", "4 500"),
+      ("Puffed doughnuts", "Hibiscus caramel", "4 000")]),
+  ]),
+  ("The café, the bar and the club", "8am – 4am", [
+    ("The café · 8am – 11am", "", [
+      ("Espresso", "", "1 500"), ("Filter coffee from the West region", "", "2 000"), ("Cappuccino", "", "2 500"),
+      ("Avocado toast, scrambled eggs", "", "5 500"),
+      ("Bugsy’s breakfast", "Pastry, fresh juice, hot drink", "6 500")]),
+    ("Signature cocktails", "", [
+      ("The Bugsy", "Bourbon, hibiscus syrup, bitters", "8 500"),
+      ("Flamingo", "Gin, passion fruit, hibiscus, tonic", "7 500"),
+      ("Penja Old Fashioned", "Whisky, Penja pepper syrup, orange", "8 500"),
+      ("Copper Mule", "Vodka, fresh ginger, lime, copper cup", "7 000"),
+      ("Gold Rush Espresso", "Vodka, West region coffee, cacao liqueur", "8 000"),
+      ("Bissap Royal", "House hibiscus syrup, brut champagne", "9 000")]),
+    ("Alcohol-free", "", [
+      ("Ginger foléré", "", "3 500"), ("Mint lemonade", "", "3 500"),
+      ("Fresh mango-passion", "", "4 000"), ("Alcohol-free Copper Mule", "", "4 500")]),
+    ("Wine and beer", "", [
+      ("Wine by the glass", "", "5 000"), ("Bottle of wine", "", "from 25 000"),
+      ("Glass of champagne", "", "12 000"), ("Beer", "", "2 000")]),
+    ("The club · Thursday to Saturday, 11pm – 4am", "Soft drinks and ice included with every bottle · Free entry for dinner guests", [
+      ("Brut champagne", "", "75 000"), ("Blanc de blancs champagne", "", "110 000"), ("Rosé champagne", "", "120 000"),
+      ("Premium vodka, 70 cl", "", "60 000"), ("12-year-old whisky, 70 cl", "", "70 000"), ("Cognac VSOP, 70 cl", "", "85 000")]),
+  ]),
+]
+
+CARTES = {"fr": CARTE_FR, "en": CARTE_EN}
 
 ANCRES = ["concept", "carte", "jazz", "club", "membres", "contact"]
 PHOTOS = ["plateau", "poisson", "cocktail", "vin", "champagne"]
@@ -132,9 +225,18 @@ def page(t):
     nav = "".join(f'<a href="#{a}">{l}</a>' for a, l in zip(ANCRES, t["nav"]))
     temps = "".join(f'<div class="temps"><div class="heure">{h}</div><h3>{n}</h3><p>{p}</p></div>' for h, n, p in t["temps"])
     galerie = "".join(f'<img src="{d}assets/img/{p}.jpg" alt="{a}" loading="lazy">' for p, a in zip(PHOTOS, t["galerie_alt"]))
+    def bloc(cat, note, plats):
+        lignes = "".join(
+            f'<p class="plat"><span class="ligne"><strong>{n}</strong><b class="prix">{px}</b></span>'
+            + (f'<span class="desc">{desc}</span>' if desc else '') + '</p>'
+            for n, desc, px in plats)
+        return f'<div class="rubrique"><h3>{cat}</h3>' + (f'<p class="note">{note}</p>' if note else '') + lignes + '</div>'
+    pdfs = ["bugsys-carte-restaurant.pdf", "bugsys-carte-bar-club.pdf"]
     carte = "".join(
-        f'<div><h3>{titre}</h3>' + "".join(f'<p class="plat"><strong>{n}</strong><span>{desc}</span></p>' for n, desc in plats) + "</div>"
-        for titre, plats in t["carte"])
+        f'<div class="volet"><p class="volet-titre">{titre} <span>{heures}</span></p><div class="carte">'
+        + "".join(bloc(*r) for r in rubriques)
+        + f'</div><a class="btn" href="{d}assets/cartes/{pdf}" download>{lien}</a></div>'
+        for (titre, heures, rubriques), pdf, lien in zip(CARTES[t["lang"]], pdfs, t["carte_pdf"]))
     rdv = "".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t["rdv"])
     classes = ["m-membre", "m-gold", "m-black"]
     membres = "".join(f'<div class="carte-membre {c}"><div class="nom">BUGSY’S</div><div class="niveau">{n.upper()}</div></div>' for c, n in zip(classes, t["niveaux"]))
@@ -193,7 +295,8 @@ def page(t):
 <section class="section" id="carte"><div class="wrap">
   <p class="eyebrow">{t['carte_eyebrow']}</p>
   <h2>{t['carte_titre']}</h2>
-  <div class="carte">{carte}</div>
+  {carte}
+  <p class="mention">{t['carte_prix']}</p>
 </div></section>
 
 <section class="section clair" id="jazz"><div class="wrap"><div class="jazz">
