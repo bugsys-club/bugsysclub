@@ -148,3 +148,14 @@ a:hover { color: var(--or-clair); }
 }
 
 .section.illustrations { padding: 0 0 clamp(48px, 7vw, 80px); border-top: none; }
+
+/* La galerie */
+.galerie-art { background: var(--noir-2); }
+.oeuvres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.oeuvres figure { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.oeuvres img { width: 100%; height: 440px; object-fit: cover; padding: 12px; background: var(--noir); border: 4px double var(--or); }
+.oeuvres figcaption { font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--discret); text-align: center; }
+@media (max-width: 760px) {
+  .oeuvres { grid-template-columns: 1fr; gap: 28px; }
+  .oeuvres img { height: 360px; }
+}

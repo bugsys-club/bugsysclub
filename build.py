@@ -20,7 +20,7 @@ TEXTES = {
         "lang": "fr", "dossier": "", "autre": "en/", "autre_label": "EN",
         "title": "Bugsy’s Social Club — Café, steak house & club à Yaoundé",
         "description": "Bugsy’s Social Club, à Bastos, Yaoundé : café le matin, steak house et fruits de mer le jour, jazz le jeudi et club DJ la nuit.",
-        "nav": ["Le concept", "La carte", "Le jazz", "Le club", "Membres", "Contact"],
+        "nav": ["Le concept", "La carte", "Le jazz", "La galerie", "Le club", "Membres", "Contact"],
         "sous": "Steak house & sea food · Yaoundé",
         "accroche": "Un café le matin, une grande table le soir, un club la nuit.",
         "cta": "Ouverture prochaine",
@@ -40,6 +40,11 @@ TEXTES = {
         "carte_prix": "Prix en francs CFA, service compris · Allergènes sur demande · L’abus d’alcool est dangereux pour la santé",
         "jazz_eyebrow": "Le jazz",
         "jazz_titre": "Le jazz en signature",
+        "galerie_eyebrow": "La galerie",
+        "galerie_titre": "Avant le vernissage",
+        "galerie_intro": "Les toiles exposées aux murs de Bugsy’s. Une nouvelle exposition chaque trimestre, un vernissage un mercredi par mois.",
+        "galerie_cartel": "Collection Bugsy’s",
+        "galerie_alts": ["Peinture abstraite aux aplats rouges, jaunes et bleus", "Peinture d’un léopard des neiges aux yeux turquoise", "Toile abstraite aux symboles dorés sur fond rouge et bleu"],
         "jazz_alt": ["Scène de jazz tamisée : contrebasse, batterie, piano et micro à la lueur des bougies", "Peinture d’une chanteuse de jazz accompagnée d’un pianiste et d’un contrebassiste", "Club de jazz art déco : chanteuse sur scène, danseurs et banquettes de velours rouge"],
         "jazz_intro": "Le Cameroun a donné au jazz quelques-unes de ses plus grandes voix. Chez Bugsy’s, on dîne au son d’un trio, puis la nuit commence.",
         "rdv": [("Jeudis Jazz · 20h – 23h", "Trio afro-jazz et soul pendant le dîner, puis le DJ prend le relais."), ("Galerie tournante", "Peintres et sculpteurs camerounais aux murs, œuvres à vendre."), ("Vernissage · un mercredi par mois", "Soirée sur invitation autour de l’artiste exposé.")],
@@ -61,7 +66,7 @@ TEXTES = {
         "lang": "en", "dossier": "../", "autre": "../", "autre_label": "FR",
         "title": "Bugsy’s Social Club — Café, steak house & club in Yaoundé",
         "description": "Bugsy’s Social Club, in Bastos, Yaoundé: a café by morning, a steak house & seafood restaurant by day, jazz on Thursdays and a DJ club by night.",
-        "nav": ["The concept", "The menu", "Jazz", "The club", "Members", "Contact"],
+        "nav": ["The concept", "The menu", "Jazz", "The gallery", "The club", "Members", "Contact"],
         "sous": "Steak house & sea food · Yaoundé",
         "accroche": "A café by morning, a grand table by evening, a club by night.",
         "cta": "Opening soon",
@@ -81,6 +86,11 @@ TEXTES = {
         "carte_prix": "Prices in CFA francs, service included · Allergens on request · Please drink responsibly",
         "jazz_eyebrow": "Jazz",
         "jazz_titre": "Jazz at the heart",
+        "galerie_eyebrow": "The gallery",
+        "galerie_titre": "Before the opening night",
+        "galerie_intro": "The paintings on the walls of Bugsy’s. A new exhibition every quarter, an opening night one Wednesday a month.",
+        "galerie_cartel": "Bugsy’s collection",
+        "galerie_alts": ["Abstract painting in red, yellow and blue blocks", "Painting of a snow leopard with turquoise eyes", "Abstract canvas with golden symbols on red and blue"],
         "jazz_alt": ["Dimly lit jazz stage: double bass, drums, piano and microphone by candlelight", "Painting of a jazz singer with a pianist and a double bass player", "Art deco jazz club: singer on stage, dancers and red velvet banquettes"],
         "jazz_intro": "Cameroon has given jazz some of its greatest voices. At Bugsy’s, dinner comes with a live trio, and then the night begins.",
         "rdv": [("Jazz Thursdays · 8pm – 11pm", "An afro-jazz and soul trio over dinner, then the DJ takes over."), ("Rotating gallery", "Cameroonian painters and sculptors on the walls, works for sale."), ("Opening night · one Wednesday a month", "An invitation-only evening around the featured artist.")],
@@ -199,7 +209,7 @@ CARTE_EN = [
 
 CARTES = {"fr": CARTE_FR, "en": CARTE_EN}
 
-ANCRES = ["concept", "carte", "jazz", "club", "membres", "contact"]
+ANCRES = ["concept", "carte", "jazz", "galerie", "club", "membres", "contact"]
 PHOTOS = ["plateau", "poisson", "cocktail", "vin", "champagne"]
 
 
@@ -313,6 +323,17 @@ def page(t):
     <img src="{d}assets/img/jazz-club.jpg" alt="{t['jazz_alt'][2]}" loading="lazy">
   </div>
 </div></div></section>
+
+<section class="section galerie-art" id="galerie"><div class="wrap">
+  <p class="eyebrow">{t['galerie_eyebrow']}</p>
+  <h2>{t['galerie_titre']}</h2>
+  <p class="intro">{t['galerie_intro']}</p>
+  <div class="oeuvres">
+    <figure><img src="{d}assets/img/galerie-abstraction.jpg" alt="{t['galerie_alts'][0]}" loading="lazy"><figcaption>{t['galerie_cartel']}</figcaption></figure>
+    <figure><img src="{d}assets/img/galerie-leopard.jpg" alt="{t['galerie_alts'][1]}" loading="lazy"><figcaption>{t['galerie_cartel']}</figcaption></figure>
+    <figure><img src="{d}assets/img/galerie-symboles.jpg" alt="{t['galerie_alts'][2]}" loading="lazy"><figcaption>{t['galerie_cartel']}</figcaption></figure>
+  </div>
+</div></section>
 
 <section class="section" id="club"><div class="wrap"><div class="jazz">
   <img src="{d}assets/img/champagne.jpg" alt="{t['galerie_alt'][4]}" loading="lazy">
