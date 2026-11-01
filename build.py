@@ -248,6 +248,7 @@ def page(t):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{t['title']}</title>
 <meta name="description" content="{t['description']}">
+<meta name="google-site-verification" content="RqMSrApwnwL7EWHjoufAK615FxAHIwPgRF8zSP913zs">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="fr" href="{SITE_URL}">
 <link rel="alternate" hreflang="en" href="{SITE_URL}en/">
