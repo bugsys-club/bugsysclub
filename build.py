@@ -40,6 +40,7 @@ TEXTES = {
         "carte_prix": "Prix en francs CFA, service compris · Allergènes sur demande · L’abus d’alcool est dangereux pour la santé",
         "jazz_eyebrow": "Le jazz",
         "jazz_titre": "Le jazz en signature",
+        "musique_titre": "L’inspiration musicale",
         "galerie_eyebrow": "La galerie",
         "galerie_titre": "Vernissages",
         "galerie_intro": "Les toiles exposées aux murs de Bugsy’s. Une nouvelle exposition chaque trimestre, un vernissage un mercredi par mois.",
@@ -87,6 +88,7 @@ TEXTES = {
         "carte_prix": "Prices in CFA francs, service included · Allergens on request · Please drink responsibly",
         "jazz_eyebrow": "Jazz",
         "jazz_titre": "Jazz at the heart",
+        "musique_titre": "Musical inspiration",
         "galerie_eyebrow": "The gallery",
         "galerie_titre": "Opening Nights",
         "galerie_intro": "The paintings on the walls of Bugsy’s. A new exhibition every quarter, an opening night one Wednesday a month.",
@@ -324,7 +326,16 @@ def page(t):
     <img src="{d}assets/img/jazz-peinture.jpg" alt="{t['jazz_alt'][1]}" loading="lazy">
     <img src="{d}assets/img/jazz-club.jpg" alt="{t['jazz_alt'][2]}" loading="lazy">
   </div>
-</div></div></section>
+</div>
+<aside class="encart-musique">
+  <p class="encart-titre">{t['musique_titre']}</p>
+  <ul>
+    <li>Soul Jazz</li>
+    <li>African Music</li>
+    <li>DJ set<span>Funky · Hip-hop · <i>Deep House</i></span></li>
+  </ul>
+</aside>
+</div></section>
 
 <section class="section galerie-art" id="galerie"><div class="wrap">
   <p class="eyebrow">{t['galerie_eyebrow']}</p>
