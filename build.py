@@ -3,7 +3,7 @@ Modifier les textes dans TEXTES, puis lancer : python3 build.py
 """
 import os
 
-SITE_URL = "https://adupassieux-arch.github.io/bugsys/"
+SITE_URL = "https://bugsys-club.github.io/bugsysclub/"
 
 LOGO = """<svg viewBox="0 0 220 220" role="img" aria-label="Monogramme BS de Bugsy’s Social Club">
   <defs><linearGradient id="or" x1="0" y1="0" x2="0" y2="1">
