@@ -35,6 +35,7 @@ TEXTES = {
         "galerie_alt": ["Grand plateau de viandes braisées, riz rouge et sauces maison", "Poisson braisé, salsa de poivrons et citron vert", "Cocktail servi dans une timbale en cuivre", "Verre de vin rouge au-dessus d’une table garnie", "Champagnes sur une table du lounge"],
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
         "carte_eyebrow": "La carte",
+        "cuisine_alts": ["Côte de bœuf tomahawk suspendue au-dessus du gril", "La brigade en cuisine dresse des entrecôtes et des frites", "Carafe de cognac extra dans la lumière du bar", "Crêpes flambées à l’orange"],
         "carte_titre": "Le grill, relevé de touches africaines",
         "carte_pdf": ["Télécharger la carte du restaurant (PDF)", "Télécharger la carte du bar et du club (PDF)"],
         "carte_prix": "Prix en francs CFA, service compris · Allergènes sur demande · L’abus d’alcool est dangereux pour la santé",
@@ -85,6 +86,7 @@ TEXTES = {
         "galerie_alt": ["Platter of braised meats, red rice and house sauces", "Braised fish with pepper salsa and lime", "Cocktail served in a copper cup", "Glass of red wine above a laid table", "Champagne on a lounge table"],
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
         "carte_eyebrow": "The menu",
+        "cuisine_alts": ["Tomahawk steak hanging over the grill", "The kitchen brigade plating sliced steaks and fries", "Decanter of extra cognac in the bar light", "Orange crêpes, flambéed"],
         "carte_titre": "The grill, with African touches",
         "carte_pdf": ["Download the restaurant menu (PDF)", "Download the bar & club menu (PDF)"],
         "carte_prix": "Prices in CFA francs, service included · Allergens on request · Please drink responsibly",
@@ -350,6 +352,13 @@ def page(t):
   {carte}
   <p class="mention">{t['carte_prix']}</p>
 </div></section>
+
+<section class="section illustrations"><div class="wrap"><div class="cuisine">
+  <img src="{d}assets/img/cuisine-tomahawk.jpg" alt="{t['cuisine_alts'][0]}" loading="lazy">
+  <img src="{d}assets/img/cuisine-brigade.jpg" alt="{t['cuisine_alts'][1]}" loading="lazy">
+  <img src="{d}assets/img/cuisine-cognac.jpg" alt="{t['cuisine_alts'][2]}" loading="lazy">
+  <img src="{d}assets/img/cuisine-crepes.jpg" alt="{t['cuisine_alts'][3]}" loading="lazy">
+</div></div></section>
 
 <section class="section clair" id="jazz"><div class="wrap"><div class="jazz">
   <div>

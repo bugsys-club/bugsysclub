@@ -188,3 +188,11 @@ a:hover { color: var(--or-clair); }
 .formulaire .piege { position: absolute; left: -9999px; }
 .formulaire .retour { margin: 0; min-height: 1.6em; text-align: center; font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--or-clair); }
 @media (max-width: 760px) { .formulaire .champs { grid-template-columns: 1fr; } }
+
+/* En cuisine */
+.cuisine { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.cuisine img { width: 100%; height: 340px; object-fit: cover; border: 1px solid var(--filet); }
+@media (max-width: 760px) {
+  .cuisine { grid-template-columns: 1fr 1fr; }
+  .cuisine img { height: 220px; }
+}
