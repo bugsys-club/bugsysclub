@@ -20,7 +20,13 @@ TEXTES = {
         "lang": "fr", "dossier": "", "autre": "en/", "autre_label": "EN",
         "title": "Bugsy’s Social Club — Café, steak house & club à Yaoundé",
         "description": "Bugsy’s Social Club, à Bastos, Yaoundé : café le matin, steak house et fruits de mer le jour, soul jazz et musiques africaines le jeudi, DJ sets funky, hip-hop et deep house la nuit.",
-        "nav": ["Le concept", "La carte", "Le jazz", "La galerie", "Le club", "Membres", "Contact"],
+        "nav": ["Le concept", "La carte", "Le jazz", "La galerie", "Le club", "La danse", "Membres", "Contact"],
+        "danse_eyebrow": "L’école de danse",
+        "danse_titre": "Danse et books",
+        "danse_intro": "Le jour, la piste du club devient un studio. On y apprend, on y répète, et on y fait les images qui font connaître les danseurs.",
+        "danse_styles": ["Afro", "Hip-hop", "Contemporain", "Salsa", "Street jazz", "Modern jazz"],
+        "danse_rdv": [("Cours · du lundi au jeudi, en journée", "Tous niveaux, du premier pas au danseur confirmé."), ("Books photo", "Shootings pour les artistes et les compagnies : portraits, mouvement, scène.")],
+        "danse_alts": ["Danseuses et danseur de contemporain sur fond noir", "Duo de danse, bras levés", "Danseuse au sol sous une lumière cuivrée", "Danseuse en cambré, cheveux au sol", "Trois danseuses d’afro en plein air"],
         "sous": "Steak house & sea food · Yaoundé",
         "accroche": "Un café le matin, une grande table le soir, un club la nuit.",
         "cta": "Ouverture prochaine",
@@ -71,7 +77,13 @@ TEXTES = {
         "lang": "en", "dossier": "../", "autre": "../", "autre_label": "FR",
         "title": "Bugsy’s Social Club — Café, steak house & club in Yaoundé",
         "description": "Bugsy’s Social Club, in Bastos, Yaoundé: a café by morning, a steak house & seafood restaurant by day, soul jazz and African music on Thursdays, funky, hip-hop and deep house DJ sets by night.",
-        "nav": ["The concept", "The menu", "Jazz", "The gallery", "The club", "Members", "Contact"],
+        "nav": ["The concept", "The menu", "Jazz", "The gallery", "The club", "Dance", "Members", "Contact"],
+        "danse_eyebrow": "The dance school",
+        "danse_titre": "Dance and books",
+        "danse_intro": "By day, the club floor becomes a studio. Dancers come to learn, to rehearse, and to make the images that get them seen.",
+        "danse_styles": ["Afro", "Hip-hop", "Contemporary", "Salsa", "Street jazz", "Modern jazz"],
+        "danse_rdv": [("Classes · Monday to Thursday, daytime", "All levels, from first steps to experienced dancers."), ("Photo books", "Shoots for artists and dance companies: portraits, movement, stage.")],
+        "danse_alts": ["Contemporary dancers against a black background", "Dance duo, arms raised", "Dancer on the floor under copper light", "Dancer in a backbend, hair on the floor", "Three afro dancers outdoors"],
         "sous": "Steak house & sea food · Yaoundé",
         "accroche": "A café by morning, a grand table by evening, a club by night.",
         "cta": "Opening soon",
@@ -260,7 +272,7 @@ def formulaire(t):
   }});
   </script>'''
 
-ANCRES = ["concept", "carte", "jazz", "galerie", "club", "membres", "contact"]
+ANCRES = ["concept", "carte", "jazz", "galerie", "club", "danse", "membres", "contact"]
 PHOTOS = ["plateau", "poisson", "cocktail", "vin", "champagne"]
 
 
@@ -424,6 +436,19 @@ def page(t):
     <p class="intro">{t['club_intro']}</p>
   </div>
 </div></div></section>
+
+<section class="section galerie-art" id="danse"><div class="wrap">
+  <div class="jazz">
+    <div>
+      <p class="eyebrow">{t['danse_eyebrow']}</p>
+      <h2>{t['danse_titre']}</h2>
+      <p class="intro">{t['danse_intro']}</p>
+      <ul class="styles">{"".join(f'<li>{x}</li>' for x in t['danse_styles'])}</ul>
+      {"".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t['danse_rdv'])}
+    </div>
+    <div class="danse-photos">{"".join(f'<img src="{d}assets/img/{n}.jpg" alt="{a}" loading="lazy">' for n, a in zip(["danse-contemporain", "danse-duo", "danse-solo", "danse-cambre", "danse-afro"], t['danse_alts']))}</div>
+  </div>
+</div></section>
 
 <section class="section clair" id="membres"><div class="wrap">
   <p class="eyebrow">{t['membres_eyebrow']}</p>
