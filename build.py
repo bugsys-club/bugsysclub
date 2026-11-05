@@ -70,7 +70,10 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroun",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Fondé par Guy Erick Tamokwe",
-        "form": {"nom": "Nom", "email": "E-mail", "objet": "Objet", "objets": ["Réservation", "Privatisation", "Carte de membre", "Autre demande"], "message": "Message", "envoyer": "Envoyer", "merci": "Merci, votre message a bien été envoyé. Nous vous répondrons très vite.", "erreur": "L’envoi n’a pas abouti. Merci de réessayer dans un instant."},
+        "partenaires_eyebrow": "Partenaires",
+        "partenaires_texte": "Bugsy’s s’associe aux compagnies, aux festivals et aux maisons qui partagent sa vision de Yaoundé : la danse, le jazz et la création, au même endroit.",
+        "partenaires_btn": "Devenir partenaire",
+        "form": {"nom": "Nom", "email": "E-mail", "objet": "Objet", "objets": ["Réservation", "Privatisation", "Carte de membre", "Partenariat", "Autre demande"], "message": "Message", "envoyer": "Envoyer", "merci": "Merci, votre message a bien été envoyé. Nous vous répondrons très vite.", "erreur": "L’envoi n’a pas abouti. Merci de réessayer dans un instant."},
         "contact_intro_form": "Réservations, privatisations et cartes de membre : écrivez-nous, nous vous répondrons personnellement.",
     },
     "en": {
@@ -127,7 +130,10 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroon",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Founded by Guy Erick Tamokwe",
-        "form": {"nom": "Name", "email": "Email", "objet": "Subject", "objets": ["Booking", "Private event", "Membership card", "Other enquiry"], "message": "Message", "envoyer": "Send", "merci": "Thank you, your message has been sent. We will reply very soon.", "erreur": "Your message could not be sent. Please try again in a moment."},
+        "partenaires_eyebrow": "Partners",
+        "partenaires_texte": "Bugsy’s works with the companies, festivals and houses that share its vision of Yaoundé: dance, jazz and creation, under one roof.",
+        "partenaires_btn": "Become a partner",
+        "form": {"nom": "Name", "email": "Email", "objet": "Subject", "objets": ["Booking", "Private event", "Membership card", "Partnership", "Other enquiry"], "message": "Message", "envoyer": "Send", "merci": "Thank you, your message has been sent. We will reply very soon.", "erreur": "Your message could not be sent. Please try again in a moment."},
         "contact_intro_form": "Bookings, private events and membership cards: write to us and we will reply personally.",
     },
 }
@@ -259,6 +265,9 @@ def formulaire(t):
     <p class="retour" role="status"></p>
   </form>
   <script>
+  document.querySelectorAll('[data-objet]').forEach(function (b) {{
+    b.addEventListener('click', function () {{ var sel = document.querySelector('.formulaire select'); if (sel) sel.value = b.dataset.objet; }});
+  }});
   document.querySelectorAll('.formulaire').forEach(function (form) {{
     form.addEventListener('submit', function (e) {{
       e.preventDefault();
@@ -455,6 +464,12 @@ def page(t):
   <h2>{t['membres_titre']}</h2>
   <p class="intro">{t['membres_intro']}</p>
   <div class="membres">{membres}</div>
+</div></section>
+
+<section class="section clair partenaires"><div class="wrap">
+  <p class="eyebrow">{t['partenaires_eyebrow']}</p>
+  <p class="partenaires-texte">{t['partenaires_texte']}</p>
+  <a class="btn" href="#contact" data-objet="{t['form']['objets'][3]}">{t['partenaires_btn']}</a>
 </div></section>
 
 <section class="section contact" id="contact"><div class="wrap">

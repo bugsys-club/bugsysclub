@@ -221,3 +221,9 @@ a:hover { color: var(--or-clair); }
   .nav a:not(.lang) { display: none; }
   .burger { display: inline-block; }
 }
+
+/* Partenaires */
+.partenaires { text-align: center; padding: clamp(56px, 8vw, 88px) 0; }
+.partenaires-texte { margin: 0 auto; max-width: 720px; font-family: var(--serif); font-style: italic; font-size: 26px; line-height: 1.45; color: #3f362b; }
+.partenaires .btn { color: var(--bronze); border-color: var(--bronze); }
+.partenaires .btn:hover { background: var(--bronze); color: var(--ivoire); }
