@@ -214,9 +214,9 @@ a:hover { color: var(--or-clair); }
 /* L'école de danse */
 .styles { list-style: none; margin: 0 0 30px; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .styles li { padding: 7px 14px; border: 1px solid var(--or); color: var(--or); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; }
-.danse-photos { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 560px; justify-self: center; }
-.danse-photos img { width: 170px; height: 210px; object-fit: cover; border: 1px solid var(--filet); }
-@media (max-width: 760px) { .danse-photos img { width: 104px; height: 128px; } .danse-photos { gap: 8px; } }
+.danse-photos { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 760px; justify-self: center; }
+.danse-photos img { width: 120px; height: 150px; object-fit: cover; border: 1px solid var(--filet); }
+@media (max-width: 760px) { .danse-photos img { width: 78px; height: 98px; } .danse-photos { gap: 8px; } }
 @media (max-width: 1180px) {
   .nav a:not(.lang) { display: none; }
   .burger { display: inline-block; }
