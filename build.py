@@ -153,7 +153,7 @@ CARTE_FR = [
       ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "9 000")]),
     ("Le grill", "Sauce au poivre blanc de Penja ou piment maison", [
       ("Dibi d’agneau", "Agneau braisé, oignons, moutarde, alloco", "9 000"),
-      ("Entrecôte, 300 g", "Frites maison ou alloco", "12 000"),
+      ("Entrecôte tranchée, 300 g", "Servie en poêle, fleur de sel, frites maison ou alloco", "12 000"),
       ("Gambas grillées", "Beurre citronné, riz jollof", "12 000")]),
     ("À partager", "", [
       ("Le Plateau Bugsy’s", "Pour deux : ndolé, poulet DG, poisson braisé, soya, trois accompagnements", "25 000")]),
@@ -162,6 +162,7 @@ CARTE_FR = [
     ("Desserts", "", [
       ("Salade de fruits frais", "Mangue, ananas, papaye", "3 000"),
       ("Beignets soufflés", "Caramel de bissap", "2 500"),
+      ("Crème brûlée", "Vanille ou bissap", "3 500"),
       ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "4 000")]),
   ]),
   ("Le café, le bar et le club", "8h – 4h", [
@@ -206,7 +207,7 @@ CARTE_EN = [
       ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "9 000")]),
     ("The grill", "White Penja pepper sauce or house chilli", [
       ("Lamb dibi", "Braised lamb, onions, mustard, alloco", "9 000"),
-      ("Rib-eye, 300 g", "House fries or alloco", "12 000"),
+      ("Sliced rib-eye, 300 g", "Served in the pan, sea salt flakes, house fries or alloco", "12 000"),
       ("Grilled king prawns", "Lemon butter, jollof rice", "12 000")]),
     ("To share", "", [
       ("The Bugsy’s platter", "For two: ndolé, chicken DG, braised fish, soya, three sides", "25 000")]),
@@ -215,6 +216,7 @@ CARTE_EN = [
     ("Desserts", "", [
       ("Fresh fruit salad", "Mango, pineapple, papaya", "3 000"),
       ("Puff-puff", "Bissap caramel", "2 500"),
+      ("Crème brûlée", "Vanilla or bissap", "3 500"),
       ("Cameroon cocoa fondant", "Molten centre, vanilla ice cream", "4 000")]),
   ]),
   ("The café, the bar and the club", "8am – 4am", [
