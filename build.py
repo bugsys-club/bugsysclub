@@ -42,7 +42,7 @@ TEXTES = {
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
         "carte_eyebrow": "La carte",
         "cuisine_alts": ["Côte de bœuf tomahawk suspendue au-dessus du gril", "La brigade en cuisine dresse des entrecôtes et des frites", "Carafe de cognac extra dans la lumière du bar", "Crêpes flambées à l’orange"],
-        "carte_titre": "Le grill, relevé de touches africaines",
+        "carte_titre": "Les saveurs d’ici, le grill en plus",
         "carte_pdf": ["Télécharger la carte du restaurant (PDF)", "Télécharger la carte du bar et du club (PDF)"],
         "carte_prix": "Prix en francs CFA, service compris · Allergènes sur demande · L’abus d’alcool est dangereux pour la santé",
         "jazz_eyebrow": "Le jazz",
@@ -102,7 +102,7 @@ TEXTES = {
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
         "carte_eyebrow": "The menu",
         "cuisine_alts": ["Tomahawk steak hanging over the grill", "The kitchen brigade plating sliced steaks and fries", "Decanter of extra cognac in the bar light", "Orange crêpes, flambéed"],
-        "carte_titre": "The grill, with African touches",
+        "carte_titre": "Local flavours, and the grill",
         "carte_pdf": ["Download the restaurant menu (PDF)", "Download the bar & club menu (PDF)"],
         "carte_prix": "Prices in CFA francs, service included · Allergens on request · Please drink responsibly",
         "jazz_eyebrow": "Jazz",
@@ -140,28 +140,28 @@ TEXTES = {
 
 CARTE_FR = [
   ("Le restaurant", "12h – 23h", [
-    ("Pour commencer", "", [
-      ("Tartare de bœuf au couteau", "Piment doux, câpres, frites maison", "8 500"),
-      ("Gambas flambées", "Beurre à l’ail et au gingembre frais", "9 000"),
-      ("Brochettes façon soya", "Bœuf épicé au grill, oignons croquants", "6 500"),
-      ("Avocat, crevettes, mangue", "Vinaigrette passion", "7 000")]),
-    ("Le grill", "Sauce au choix : poivre blanc de Penja · béarnaise · mbongo · piment maison", [
-      ("Entrecôte, 300 g", "", "15 000"),
-      ("Filet de bœuf, 250 g", "", "18 000"),
-      ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle", "45 000"),
-      ("Côtelettes d’agneau", "Marinade aux épices du marché", "16 000"),
-      ("Demi-poulet braisé façon DG", "Plantains mûrs, légumes croquants", "11 000")]),
-    ("La mer", "", [
-      ("Bar braisé entier", "Salsa crue, citron vert, alloco", "14 000"),
-      ("Gambas grillées, six pièces", "Beurre citronné, riz jollof", "18 000"),
-      ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "15 000"),
-      ("Le Plateau Bugsy’s", "Pour deux : gambas, poisson braisé, calamars, trois accompagnements", "48 000")]),
-    ("Accompagnements", "Frites maison · Alloco · Miondo · Riz jollof · Légumes grillés · Purée de patate douce", [
-      ("L’accompagnement", "", "2 500")]),
+    ("Salades et entrées", "", [
+      ("Salade Bugsy’s", "Avocat, crevettes, mangue, vinaigrette passion", "6 000"),
+      ("Salade du marché", "Crudités, avocat, œuf, vinaigrette maison", "4 000"),
+      ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "3 500")]),
+    ("Spécialités", "", [
+      ("Ndolé aux crevettes", "Feuilles de ndolé, arachides, crevettes, plantain mûr", "7 000"),
+      ("Poulet DG", "Plantains mûrs, carottes, haricots verts", "7 500"),
+      ("Mafé de bœuf", "Sauce à l’arachide, riz blanc", "6 000"),
+      ("Poulet yassa", "Oignons confits au citron, riz blanc", "6 500"),
+      ("Poisson braisé entier", "Bar ou capitaine, alloco, bâton de manioc", "9 000"),
+      ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "9 000")]),
+    ("Le grill", "Sauce au poivre blanc de Penja ou piment maison", [
+      ("Entrecôte, 300 g", "Frites maison ou alloco", "12 000"),
+      ("Gambas grillées", "Beurre citronné, riz jollof", "12 000")]),
+    ("À partager", "", [
+      ("Le Plateau Bugsy’s", "Pour deux : ndolé, poulet DG, poisson braisé, soya, trois accompagnements", "25 000")]),
+    ("Accompagnements", "Alloco · Riz blanc · Riz jollof · Miondo · Bâton de manioc · Frites maison", [
+      ("L’accompagnement", "", "1 500")]),
     ("Desserts", "", [
-      ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "5 000"),
-      ("Cheesecake mangue-passion", "Biscuit sablé, coulis maison", "4 500"),
-      ("Beignets soufflés", "Caramel de bissap", "4 000")]),
+      ("Salade de fruits frais", "Mangue, ananas, papaye", "3 000"),
+      ("Beignets soufflés", "Caramel de bissap", "2 500"),
+      ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "4 000")]),
   ]),
   ("Le café, le bar et le club", "8h – 4h", [
     ("Le café · 8h – 11h", "", [
@@ -192,28 +192,28 @@ CARTE_FR = [
 ]
 CARTE_EN = [
   ("The restaurant", "Noon – 11pm", [
-    ("To start", "", [
-      ("Hand-cut beef tartare", "Mild chilli, capers, house fries", "8 500"),
-      ("Flambéed king prawns", "Garlic and fresh ginger butter", "9 000"),
-      ("Soya-style skewers", "Spiced grilled beef, crispy onions", "6 500"),
-      ("Avocado, prawns, mango", "Passion fruit dressing", "7 000")]),
-    ("The grill", "Choice of sauce: white Penja pepper · béarnaise · mbongo · house chilli", [
-      ("Rib-eye, 300 g", "", "15 000"),
-      ("Beef fillet, 250 g", "", "18 000"),
-      ("Dry-aged rib of beef, 1 kg", "For two, carved at the table", "45 000"),
-      ("Lamb cutlets", "Market spice marinade", "16 000"),
-      ("Half chicken, DG style", "Ripe plantain, crisp vegetables", "11 000")]),
-    ("The sea", "", [
-      ("Whole braised sea bass", "Raw salsa, lime, alloco", "14 000"),
-      ("Grilled king prawns, six", "Lemon butter, jollof rice", "18 000"),
-      ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "15 000"),
-      ("The Bugsy’s platter", "For two: prawns, braised fish, squid, three sides", "48 000")]),
-    ("Sides", "House fries · Alloco · Miondo · Jollof rice · Grilled vegetables · Sweet potato mash", [
-      ("Each side", "", "2 500")]),
+    ("Salads and starters", "", [
+      ("Bugsy’s salad", "Avocado, prawns, mango, passion fruit dressing", "6 000"),
+      ("Market salad", "Raw vegetables, avocado, egg, house dressing", "4 000"),
+      ("Soya", "Spiced grilled beef skewers, onions, chilli", "3 500")]),
+    ("Local specialities", "", [
+      ("Ndolé with prawns", "Ndolé leaves, peanuts, prawns, ripe plantain", "7 000"),
+      ("Chicken DG", "Ripe plantain, carrots, green beans", "7 500"),
+      ("Beef mafé", "Peanut sauce, white rice", "6 000"),
+      ("Chicken yassa", "Onions slow-cooked with lemon, white rice", "6 500"),
+      ("Whole braised fish", "Sea bass or captain fish, alloco, cassava stick", "9 000"),
+      ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "9 000")]),
+    ("The grill", "White Penja pepper sauce or house chilli", [
+      ("Rib-eye, 300 g", "House fries or alloco", "12 000"),
+      ("Grilled king prawns", "Lemon butter, jollof rice", "12 000")]),
+    ("To share", "", [
+      ("The Bugsy’s platter", "For two: ndolé, chicken DG, braised fish, soya, three sides", "25 000")]),
+    ("Sides", "Alloco · White rice · Jollof rice · Miondo · Cassava stick · House fries", [
+      ("Side dish", "", "1 500")]),
     ("Desserts", "", [
-      ("Cameroonian cocoa fondant", "Molten centre, vanilla ice cream", "5 000"),
-      ("Mango-passion cheesecake", "Shortbread base, house coulis", "4 500"),
-      ("Puffed doughnuts", "Hibiscus caramel", "4 000")]),
+      ("Fresh fruit salad", "Mango, pineapple, papaya", "3 000"),
+      ("Puff-puff", "Bissap caramel", "2 500"),
+      ("Cameroon cocoa fondant", "Molten centre, vanilla ice cream", "4 000")]),
   ]),
   ("The café, the bar and the club", "8am – 4am", [
     ("The café · 8am – 11am", "", [
@@ -294,7 +294,7 @@ def jsonld(t, url):
         "url": url,
         "description": t["description"],
         "image": SITE_URL + "assets/img/plateau.jpg",
-        "servesCuisine": ["Steakhouse", "Seafood", "Cameroonian"],
+        "servesCuisine": ["Cameroonian", "African", "Steakhouse", "Seafood"],
         "address": {"@type": "PostalAddress", "addressLocality": "Yaoundé", "addressRegion": "Bastos", "addressCountry": "CM"},
         "inLanguage": t["lang"],
         "founder": {"@type": "Person", "name": "Guy Erick Tamokwe"},
