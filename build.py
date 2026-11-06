@@ -41,6 +41,7 @@ TEXTES = {
         "galerie_alt": ["Grand plateau de viandes braisées, riz rouge et sauces maison", "Poisson braisé, salsa de poivrons et citron vert", "Cocktail servi dans une timbale en cuivre", "Verre de vin rouge au-dessus d’une table garnie", "Champagnes sur une table du lounge"],
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
         "carte_eyebrow": "La carte",
+        "grill_alt": "Pièce de bœuf saisie dans les flammes du grill",
         "cuisine_alts": ["Côte de bœuf tomahawk suspendue au-dessus du gril", "La brigade en cuisine dresse des entrecôtes et des frites", "Carafe de cognac extra dans la lumière du bar", "Crêpes flambées à l’orange"],
         "carte_titre": "Les saveurs d’ici, le grill en plus",
         "carte_pdf": ["Télécharger la carte du restaurant (PDF)", "Télécharger la carte du bar et du club (PDF)"],
@@ -101,6 +102,7 @@ TEXTES = {
         "galerie_alt": ["Platter of braised meats, red rice and house sauces", "Braised fish with pepper salsa and lime", "Cocktail served in a copper cup", "Glass of red wine above a laid table", "Champagne on a lounge table"],
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
         "carte_eyebrow": "The menu",
+        "grill_alt": "Beef seared in the flames of the grill",
         "cuisine_alts": ["Tomahawk steak hanging over the grill", "The kitchen brigade plating sliced steaks and fries", "Decanter of extra cognac in the bar light", "Orange crêpes, flambéed"],
         "carte_titre": "Local flavours, and the grill",
         "carte_pdf": ["Download the restaurant menu (PDF)", "Download the bar & club menu (PDF)"],
@@ -394,8 +396,13 @@ def page(t):
 </div></div></section>
 
 <section class="section" id="carte"><div class="wrap">
-  <p class="eyebrow">{t['carte_eyebrow']}</p>
-  <h2>{t['carte_titre']}</h2>
+  <div class="carte-tete">
+    <div>
+      <p class="eyebrow">{t['carte_eyebrow']}</p>
+      <h2>{t['carte_titre']}</h2>
+    </div>
+    <img src="{d}assets/img/grill-flammes.jpg" alt="{t['grill_alt']}" loading="lazy">
+  </div>
   {carte}
   <p class="mention">{t['carte_prix']}</p>
 </div></section>
