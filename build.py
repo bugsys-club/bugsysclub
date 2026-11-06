@@ -44,7 +44,7 @@ TEXTES = {
         "grill_alt": "Pièce de bœuf saisie dans les flammes du grill",
         "bar_alt": "Cocktails alignés sur le comptoir du bar, bouteilles éclairées en arrière-plan",
         "cuisine_alts": ["Côte de bœuf tomahawk suspendue au-dessus du gril", "La brigade en cuisine dresse des entrecôtes et des frites", "Carafe de cognac extra dans la lumière du bar", "Crêpes flambées à l’orange"],
-        "carte_titre": "Les saveurs d’ici, le grill en plus",
+        "carte_titre": "Steak house, sea food et classiques du monde",
         "carte_pdf": ["Télécharger la carte du restaurant (PDF)", "Télécharger la carte du bar et du club (PDF)"],
         "carte_prix": "Prix en francs CFA, service compris · Allergènes sur demande · L’abus d’alcool est dangereux pour la santé",
         "jazz_eyebrow": "Le jazz",
@@ -106,7 +106,7 @@ TEXTES = {
         "grill_alt": "Beef seared in the flames of the grill",
         "bar_alt": "Cocktails lined up on the bar counter, lit bottles behind",
         "cuisine_alts": ["Tomahawk steak hanging over the grill", "The kitchen brigade plating sliced steaks and fries", "Decanter of extra cognac in the bar light", "Orange crêpes, flambéed"],
-        "carte_titre": "Local flavours, and the grill",
+        "carte_titre": "Steak house, seafood and world classics",
         "carte_pdf": ["Download the restaurant menu (PDF)", "Download the bar & club menu (PDF)"],
         "carte_prix": "Prices in CFA francs, service included · Allergens on request · Please drink responsibly",
         "jazz_eyebrow": "Jazz",
@@ -144,37 +144,42 @@ TEXTES = {
 
 CARTE_FR = [
   ("Le restaurant", "12h – 23h", [
-    ("Signatures", "Les grandes pièces de la maison, découpées, flambées ou servies en salle", [
-      ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle, sauces au choix", "45 000"),
-      ("Langouste de Kribi grillée", "Beurre au poivre blanc de Penja, riz jollof", "25 000"),
-      ("Tartare de bœuf au couteau", "Piment doux, câpres, frites maison", "8 500"),
-      ("Gambas flambées en salle", "Beurre à l’ail et au gingembre frais", "9 000"),
-      ("Plateau de la mer", "Pour deux : gambas, poisson braisé, calamars, trois accompagnements", "48 000")]),
-    ("Salades et entrées", "", [
-      ("Salade Bugsy’s", "Avocat, crevettes, mangue, vinaigrette passion", "6 000"),
-      ("Salade Bastos", "Crudités, avocat, œuf, vinaigrette maison", "4 000"),
-      ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "3 500")]),
-    ("Spécialités", "", [
-      ("Ndolé aux crevettes", "Feuilles de ndolé, arachides, crevettes, plantain mûr", "7 000"),
-      ("Poulet DG", "Plantains mûrs, carottes, haricots verts", "7 500"),
-      ("Mafé, au choix", "Sauce à l’arachide, riz blanc · bœuf ou poulet 6 000 · agneau 7 500", "dès 6 000"),
-      ("Yassa, au choix", "Oignons confits au citron, riz blanc · poulet 6 500 · poisson 8 000 · crevettes 9 000", "dès 6 500"),
-      ("Poisson braisé entier", "Bar ou capitaine, alloco, bâton de manioc", "9 000"),
-      ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "9 000")]),
-    ("Le grill", "Sauce au choix : poivre blanc de Penja · béarnaise · mbongo · piment maison", [
-      ("Dibi d’agneau", "Agneau braisé, oignons, moutarde, alloco", "9 000"),
-      ("Entrecôte tranchée, 300 g", "Servie en poêle, fleur de sel, frites maison ou alloco", "12 000"),
-      ("Gambas grillées", "Beurre citronné, riz jollof", "12 000")]),
-    ("À partager", "", [
-      ("Le Plateau Bugsy’s", "Pour deux : ndolé, poulet DG, poisson braisé, soya, trois accompagnements", "25 000")]),
-    ("Accompagnements", "Alloco · Riz blanc · Riz jollof · Miondo · Bâton de manioc · Frites maison", [
-      ("L’accompagnement", "", "1 500")]),
-    ("Desserts", "", [
-      ("Salade de fruits frais", "Mangue, ananas, papaye", "3 000"),
-      ("Beignets soufflés", "Caramel de bissap", "2 500"),
-      ("Crème brûlée", "Vanille ou bissap", "3 500"),
-      ("Cheesecake mangue-passion", "Biscuit sablé, coulis maison", "4 500"),
-      ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "4 000")]),
+    ("Bienvenue", "Notre rituel, à l’arrivée et au départ", [
+      ("Rhum arrangé maison", "Offert à chaque convive", "offert")]),
+    ("Pour commencer", "", [
+      ("Os à moelle rôti", "Fleur de sel, pain grillé, persillade", "6 000"),
+      ("Salade Bugsy’s", "Avocat, crevettes de Kribi, mangue, vinaigrette passion", "7 000"),
+      ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "4 500")]),
+    ("Le Steak House", "Chaque pièce est servie avec son os à moelle rôti · Sauces : poivre blanc de Penja · béarnaise · mbongo", [
+      ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle", "45 000"),
+      ("Filet de bœuf, 250 g", "", "18 000"),
+      ("Entrecôte tranchée, 300 g", "Servie en poêle, fleur de sel", "15 000"),
+      ("Dibi d’agneau", "Agneau braisé, oignons, moutarde", "12 000")]),
+    ("Le Sea Food", "Les meilleurs produits de la mer, de Kribi et d’ailleurs", [
+      ("Plateau de fruits de mer", "Pour deux : langouste, gambas, crevettes de Kribi, calamars", "55 000"),
+      ("Langouste de Kribi grillée", "Beurre au poivre blanc de Penja", "25 000"),
+      ("Gambas flambées en salle", "Beurre à l’ail et au gingembre frais", "12 000"),
+      ("Poisson braisé entier", "Bar ou capitaine, alloco, bâton de manioc", "12 000")]),
+    ("Classiques d’Afrique", "Servis à l’assiette, comme en gastronomie", [
+      ("Ndolé aux crevettes", "Arachides, crevettes, plantain mûr", "9 000"),
+      ("Poulet DG", "Plantains mûrs, carottes, haricots verts", "9 000"),
+      ("Mafé, au choix", "Sauce à l’arachide, riz blanc · bœuf ou poulet 8 000 · agneau 9 500", "dès 8 000"),
+      ("Yassa, au choix", "Oignons confits au citron · poulet 8 000 · poisson 10 000 · crevettes 11 000", "dès 8 000"),
+      ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "12 000")]),
+    ("Classiques du monde", "Amérique · Europe · Asie", [
+      ("Burger Bugsy’s", "Bœuf maturé, cheddar affiné, oignons confits, frites maison", "9 500"),
+      ("Tartare de bœuf au couteau", "Piment doux, câpres, frites maison", "9 500"),
+      ("Sole meunière", "Beurre noisette, citron, pommes vapeur", "16 000"),
+      ("Tataki de thon", "Sésame, gingembre, sauce ponzu", "11 000"),
+      ("Gambas au wok", "Nouilles sautées, légumes croquants", "12 000")]),
+    ("Accompagnements", "Frites maison · Alloco · Riz jollof · Miondo · Légumes grillés · Purée maison", [
+      ("L’accompagnement", "", "2 000")]),
+    ("La pâtisserie française", "", [
+      ("Crêpe Suzette", "Flambée au Grand Marnier, en salle", "6 000"),
+      ("Mille-feuille", "Crème vanille, caramel", "5 000"),
+      ("Profiteroles", "Glace vanille, chocolat chaud", "5 000"),
+      ("Crème brûlée", "Vanille ou bissap", "4 500"),
+      ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "5 000")]),
   ]),
   ("Le café, le bar et le club", "8h – 4h", [
     ("Le café · 8h – 11h", "", [
@@ -191,13 +196,13 @@ CARTE_FR = [
     ("Sans alcool", "", [
       ("Foléré gingembre", "", "3 500"), ("Citronnade menthe", "", "3 500"),
       ("Mangue-passion pressé", "", "4 000"), ("Copper Mule sans alcool", "", "4 500")]),
-    ("Vins et bière", "", [
+    ("La cave et la bière", "Bordeaux, Bourgogne, Rhône, Champagne : carte des vins sur demande", [
       ("Vin au verre", "", "5 000"), ("Bouteille de vin", "", "dès 25 000"),
       ("Coupe de champagne", "", "12 000"), ("Bière", "", "2 000")]),
     ("Le club · jeudi à samedi, 23h – 4h", "Softs et glace inclus avec chaque bouteille · Entrée offerte aux clients du dîner", [
       ("Champagne brut", "", "75 000"), ("Champagne blanc de blancs", "", "110 000"), ("Champagne rosé", "", "120 000"),
       ("Vodka premium, 70 cl", "", "60 000"), ("Whisky 12 ans, 70 cl", "", "70 000"), ("Cognac VSOP, 70 cl", "", "85 000")]),
-    ("Grandes maisons", "Au salon ou au club", [
+    ("Bouteilles de collection", "Au salon ou au club", [
       ("Dom Pérignon", "Champagne millésimé, 75 cl", "450 000"),
       ("Petrus", "Pomerol, 75 cl", "sur demande"),
       ("Lise Baccara Extra", "Cognac, 70 cl", "250 000")]),
@@ -205,37 +210,42 @@ CARTE_FR = [
 ]
 CARTE_EN = [
   ("The restaurant", "Noon – 11pm", [
-    ("Signatures", "The house’s showpieces, carved, flambéed or served at the table", [
-      ("Dry-aged rib of beef, 1 kg", "For two, carved at the table, choice of sauces", "45 000"),
-      ("Grilled Kribi lobster", "White Penja pepper butter, jollof rice", "25 000"),
-      ("Hand-cut beef tartare", "Mild chilli, capers, house fries", "8 500"),
-      ("King prawns flambéed at the table", "Garlic and fresh ginger butter", "9 000"),
-      ("Seafood platter", "For two: prawns, braised fish, squid, three sides", "48 000")]),
-    ("Salads and starters", "", [
-      ("Bugsy’s salad", "Avocado, prawns, mango, passion fruit dressing", "6 000"),
-      ("Bastos salad", "Raw vegetables, avocado, egg, house dressing", "4 000"),
-      ("Soya", "Spiced grilled beef skewers, onions, chilli", "3 500")]),
-    ("Local specialities", "", [
-      ("Ndolé with prawns", "Ndolé leaves, peanuts, prawns, ripe plantain", "7 000"),
-      ("Chicken DG", "Ripe plantain, carrots, green beans", "7 500"),
-      ("Mafé, your choice", "Peanut sauce, white rice · beef or chicken 6 000 · lamb 7 500", "from 6 000"),
-      ("Yassa, your choice", "Onions slow-cooked with lemon, white rice · chicken 6 500 · fish 8 000 · prawns 9 000", "from 6 500"),
-      ("Whole braised fish", "Sea bass or captain fish, alloco, cassava stick", "9 000"),
-      ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "9 000")]),
-    ("The grill", "Choice of sauce: white Penja pepper · béarnaise · mbongo · house chilli", [
-      ("Lamb dibi", "Braised lamb, onions, mustard, alloco", "9 000"),
-      ("Sliced rib-eye, 300 g", "Served in the pan, sea salt flakes, house fries or alloco", "12 000"),
-      ("Grilled king prawns", "Lemon butter, jollof rice", "12 000")]),
-    ("To share", "", [
-      ("The Bugsy’s platter", "For two: ndolé, chicken DG, braised fish, soya, three sides", "25 000")]),
-    ("Sides", "Alloco · White rice · Jollof rice · Miondo · Cassava stick · House fries", [
-      ("Side dish", "", "1 500")]),
-    ("Desserts", "", [
-      ("Fresh fruit salad", "Mango, pineapple, papaya", "3 000"),
-      ("Puff-puff", "Bissap caramel", "2 500"),
-      ("Crème brûlée", "Vanilla or bissap", "3 500"),
-      ("Mango-passion cheesecake", "Shortbread base, house coulis", "4 500"),
-      ("Cameroon cocoa fondant", "Molten centre, vanilla ice cream", "4 000")]),
+    ("Welcome", "Our ritual, on arrival and on leaving", [
+      ("House-infused rum", "On the house for every guest", "complimentary")]),
+    ("To start", "", [
+      ("Roasted bone marrow", "Sea salt, toasted bread, parsley and garlic", "6 000"),
+      ("Bugsy’s salad", "Avocado, Kribi prawns, mango, passion fruit dressing", "7 000"),
+      ("Soya", "Spiced grilled beef skewers, onions, chilli", "4 500")]),
+    ("The Steak House", "Every cut comes with its roasted marrow bone · Sauces: white Penja pepper · béarnaise · mbongo", [
+      ("Dry-aged rib of beef, 1 kg", "For two, carved at the table", "45 000"),
+      ("Beef fillet, 250 g", "", "18 000"),
+      ("Sliced rib-eye, 300 g", "Served in the pan, sea salt flakes", "15 000"),
+      ("Lamb dibi", "Braised lamb, onions, mustard", "12 000")]),
+    ("The Sea Food", "The finest seafood, from Kribi and beyond", [
+      ("Seafood platter", "For two: lobster, king prawns, Kribi prawns, squid", "55 000"),
+      ("Grilled Kribi lobster", "White Penja pepper butter", "25 000"),
+      ("King prawns flambéed at the table", "Garlic and fresh ginger butter", "12 000"),
+      ("Whole braised fish", "Sea bass or captain fish, alloco, cassava stick", "12 000")]),
+    ("African classics", "Plated the way fine dining does", [
+      ("Ndolé with prawns", "Peanuts, prawns, ripe plantain", "9 000"),
+      ("Chicken DG", "Ripe plantain, carrots, green beans", "9 000"),
+      ("Mafé, your choice", "Peanut sauce, white rice · beef or chicken 8 000 · lamb 9 500", "from 8 000"),
+      ("Yassa, your choice", "Onions slow-cooked with lemon · chicken 8 000 · fish 10 000 · prawns 11 000", "from 8 000"),
+      ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "12 000")]),
+    ("World classics", "America · Europe · Asia", [
+      ("Bugsy’s burger", "Dry-aged beef, aged cheddar, caramelised onions, house fries", "9 500"),
+      ("Hand-cut beef tartare", "Mild chilli, capers, house fries", "9 500"),
+      ("Sole meunière", "Brown butter, lemon, steamed potatoes", "16 000"),
+      ("Tuna tataki", "Sesame, ginger, ponzu", "11 000"),
+      ("Wok-fried king prawns", "Stir-fried noodles, crisp vegetables", "12 000")]),
+    ("Sides", "House fries · Alloco · Jollof rice · Miondo · Grilled vegetables · House mash", [
+      ("Side dish", "", "2 000")]),
+    ("French pâtisserie", "", [
+      ("Crêpe Suzette", "Flambéed with Grand Marnier at the table", "6 000"),
+      ("Mille-feuille", "Vanilla cream, caramel", "5 000"),
+      ("Profiteroles", "Vanilla ice cream, hot chocolate sauce", "5 000"),
+      ("Crème brûlée", "Vanilla or bissap", "4 500"),
+      ("Cameroon cocoa fondant", "Molten centre, vanilla ice cream", "5 000")]),
   ]),
   ("The café, the bar and the club", "8am – 4am", [
     ("The café · 8am – 11am", "", [
@@ -252,13 +262,13 @@ CARTE_EN = [
     ("Alcohol-free", "", [
       ("Ginger foléré", "", "3 500"), ("Mint lemonade", "", "3 500"),
       ("Fresh mango-passion", "", "4 000"), ("Alcohol-free Copper Mule", "", "4 500")]),
-    ("Wine and beer", "", [
+    ("The cellar and beer", "Bordeaux, Burgundy, Rhône, Champagne: wine list on request", [
       ("Wine by the glass", "", "5 000"), ("Bottle of wine", "", "from 25 000"),
       ("Glass of champagne", "", "12 000"), ("Beer", "", "2 000")]),
     ("The club · Thursday to Saturday, 11pm – 4am", "Soft drinks and ice included with every bottle · Free entry for dinner guests", [
       ("Brut champagne", "", "75 000"), ("Blanc de blancs champagne", "", "110 000"), ("Rosé champagne", "", "120 000"),
       ("Premium vodka, 70 cl", "", "60 000"), ("12-year-old whisky, 70 cl", "", "70 000"), ("Cognac VSOP, 70 cl", "", "85 000")]),
-    ("Prestige bottles", "In the lounge or at the club", [
+    ("Collector’s bottles", "In the lounge or at the club", [
       ("Dom Pérignon", "Vintage champagne, 75 cl", "450 000"),
       ("Petrus", "Pomerol, 75 cl", "on request"),
       ("Lise Baccara Extra", "Cognac, 70 cl", "250 000")]),
@@ -316,7 +326,7 @@ def jsonld(t, url):
         "url": url,
         "description": t["description"],
         "image": SITE_URL + "assets/img/plateau.jpg",
-        "servesCuisine": ["Cameroonian", "African", "Steakhouse", "Seafood"],
+        "servesCuisine": ["Steakhouse", "Seafood", "Cameroonian", "African", "French", "International"],
         "address": {"@type": "PostalAddress", "addressLocality": "Yaoundé", "addressRegion": "Bastos", "addressCountry": "CM"},
         "inLanguage": t["lang"],
         "founder": {"@type": "Person", "name": "Guy Erick Tamokwe"},
