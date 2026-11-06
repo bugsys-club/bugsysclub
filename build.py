@@ -142,7 +142,7 @@ CARTE_FR = [
   ("Le restaurant", "12h – 23h", [
     ("Salades et entrées", "", [
       ("Salade Bugsy’s", "Avocat, crevettes, mangue, vinaigrette passion", "6 000"),
-      ("Salade du marché", "Crudités, avocat, œuf, vinaigrette maison", "4 000"),
+      ("Salade Bastos", "Crudités, avocat, œuf, vinaigrette maison", "4 000"),
       ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "3 500")]),
     ("Spécialités", "", [
       ("Ndolé aux crevettes", "Feuilles de ndolé, arachides, crevettes, plantain mûr", "7 000"),
@@ -152,6 +152,7 @@ CARTE_FR = [
       ("Poisson braisé entier", "Bar ou capitaine, alloco, bâton de manioc", "9 000"),
       ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "9 000")]),
     ("Le grill", "Sauce au poivre blanc de Penja ou piment maison", [
+      ("Dibi d’agneau", "Agneau braisé, oignons, moutarde, alloco", "9 000"),
       ("Entrecôte, 300 g", "Frites maison ou alloco", "12 000"),
       ("Gambas grillées", "Beurre citronné, riz jollof", "12 000")]),
     ("À partager", "", [
@@ -194,7 +195,7 @@ CARTE_EN = [
   ("The restaurant", "Noon – 11pm", [
     ("Salads and starters", "", [
       ("Bugsy’s salad", "Avocado, prawns, mango, passion fruit dressing", "6 000"),
-      ("Market salad", "Raw vegetables, avocado, egg, house dressing", "4 000"),
+      ("Bastos salad", "Raw vegetables, avocado, egg, house dressing", "4 000"),
       ("Soya", "Spiced grilled beef skewers, onions, chilli", "3 500")]),
     ("Local specialities", "", [
       ("Ndolé with prawns", "Ndolé leaves, peanuts, prawns, ripe plantain", "7 000"),
@@ -204,6 +205,7 @@ CARTE_EN = [
       ("Whole braised fish", "Sea bass or captain fish, alloco, cassava stick", "9 000"),
       ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "9 000")]),
     ("The grill", "White Penja pepper sauce or house chilli", [
+      ("Lamb dibi", "Braised lamb, onions, mustard, alloco", "9 000"),
       ("Rib-eye, 300 g", "House fries or alloco", "12 000"),
       ("Grilled king prawns", "Lemon butter, jollof rice", "12 000")]),
     ("To share", "", [
