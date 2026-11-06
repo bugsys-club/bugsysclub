@@ -144,6 +144,12 @@ TEXTES = {
 
 CARTE_FR = [
   ("Le restaurant", "12h – 23h", [
+    ("Signatures", "Les grandes pièces de la maison, découpées, flambées ou servies en salle", [
+      ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle, sauces au choix", "45 000"),
+      ("Langouste de Kribi grillée", "Beurre au poivre blanc de Penja, riz jollof", "25 000"),
+      ("Tartare de bœuf au couteau", "Piment doux, câpres, frites maison", "8 500"),
+      ("Gambas flambées en salle", "Beurre à l’ail et au gingembre frais", "9 000"),
+      ("Plateau de la mer", "Pour deux : gambas, poisson braisé, calamars, trois accompagnements", "48 000")]),
     ("Salades et entrées", "", [
       ("Salade Bugsy’s", "Avocat, crevettes, mangue, vinaigrette passion", "6 000"),
       ("Salade Bastos", "Crudités, avocat, œuf, vinaigrette maison", "4 000"),
@@ -155,7 +161,7 @@ CARTE_FR = [
       ("Yassa, au choix", "Oignons confits au citron, riz blanc · poulet 6 500 · poisson 8 000 · crevettes 9 000", "dès 6 500"),
       ("Poisson braisé entier", "Bar ou capitaine, alloco, bâton de manioc", "9 000"),
       ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "9 000")]),
-    ("Le grill", "Sauce au poivre blanc de Penja ou piment maison", [
+    ("Le grill", "Sauce au choix : poivre blanc de Penja · béarnaise · mbongo · piment maison", [
       ("Dibi d’agneau", "Agneau braisé, oignons, moutarde, alloco", "9 000"),
       ("Entrecôte tranchée, 300 g", "Servie en poêle, fleur de sel, frites maison ou alloco", "12 000"),
       ("Gambas grillées", "Beurre citronné, riz jollof", "12 000")]),
@@ -167,6 +173,7 @@ CARTE_FR = [
       ("Salade de fruits frais", "Mangue, ananas, papaye", "3 000"),
       ("Beignets soufflés", "Caramel de bissap", "2 500"),
       ("Crème brûlée", "Vanille ou bissap", "3 500"),
+      ("Cheesecake mangue-passion", "Biscuit sablé, coulis maison", "4 500"),
       ("Fondant au cacao du Cameroun", "Cœur coulant, glace vanille", "4 000")]),
   ]),
   ("Le café, le bar et le club", "8h – 4h", [
@@ -198,6 +205,12 @@ CARTE_FR = [
 ]
 CARTE_EN = [
   ("The restaurant", "Noon – 11pm", [
+    ("Signatures", "The house’s showpieces, carved, flambéed or served at the table", [
+      ("Dry-aged rib of beef, 1 kg", "For two, carved at the table, choice of sauces", "45 000"),
+      ("Grilled Kribi lobster", "White Penja pepper butter, jollof rice", "25 000"),
+      ("Hand-cut beef tartare", "Mild chilli, capers, house fries", "8 500"),
+      ("King prawns flambéed at the table", "Garlic and fresh ginger butter", "9 000"),
+      ("Seafood platter", "For two: prawns, braised fish, squid, three sides", "48 000")]),
     ("Salads and starters", "", [
       ("Bugsy’s salad", "Avocado, prawns, mango, passion fruit dressing", "6 000"),
       ("Bastos salad", "Raw vegetables, avocado, egg, house dressing", "4 000"),
@@ -209,7 +222,7 @@ CARTE_EN = [
       ("Yassa, your choice", "Onions slow-cooked with lemon, white rice · chicken 6 500 · fish 8 000 · prawns 9 000", "from 6 500"),
       ("Whole braised fish", "Sea bass or captain fish, alloco, cassava stick", "9 000"),
       ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "9 000")]),
-    ("The grill", "White Penja pepper sauce or house chilli", [
+    ("The grill", "Choice of sauce: white Penja pepper · béarnaise · mbongo · house chilli", [
       ("Lamb dibi", "Braised lamb, onions, mustard, alloco", "9 000"),
       ("Sliced rib-eye, 300 g", "Served in the pan, sea salt flakes, house fries or alloco", "12 000"),
       ("Grilled king prawns", "Lemon butter, jollof rice", "12 000")]),
@@ -221,6 +234,7 @@ CARTE_EN = [
       ("Fresh fruit salad", "Mango, pineapple, papaya", "3 000"),
       ("Puff-puff", "Bissap caramel", "2 500"),
       ("Crème brûlée", "Vanilla or bissap", "3 500"),
+      ("Mango-passion cheesecake", "Shortbread base, house coulis", "4 500"),
       ("Cameroon cocoa fondant", "Molten centre, vanilla ice cream", "4 000")]),
   ]),
   ("The café, the bar and the club", "8am – 4am", [
