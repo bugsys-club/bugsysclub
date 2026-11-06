@@ -42,6 +42,7 @@ TEXTES = {
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
         "carte_eyebrow": "La carte",
         "grill_alt": "Pièce de bœuf saisie dans les flammes du grill",
+        "bar_alt": "Cocktails alignés sur le comptoir du bar, bouteilles éclairées en arrière-plan",
         "cuisine_alts": ["Côte de bœuf tomahawk suspendue au-dessus du gril", "La brigade en cuisine dresse des entrecôtes et des frites", "Carafe de cognac extra dans la lumière du bar", "Crêpes flambées à l’orange"],
         "carte_titre": "Les saveurs d’ici, le grill en plus",
         "carte_pdf": ["Télécharger la carte du restaurant (PDF)", "Télécharger la carte du bar et du club (PDF)"],
@@ -103,6 +104,7 @@ TEXTES = {
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
         "carte_eyebrow": "The menu",
         "grill_alt": "Beef seared in the flames of the grill",
+        "bar_alt": "Cocktails lined up on the bar counter, lit bottles behind",
         "cuisine_alts": ["Tomahawk steak hanging over the grill", "The kitchen brigade plating sliced steaks and fries", "Decanter of extra cognac in the bar light", "Orange crêpes, flambéed"],
         "carte_titre": "Local flavours, and the grill",
         "carte_pdf": ["Download the restaurant menu (PDF)", "Download the bar & club menu (PDF)"],
@@ -320,11 +322,12 @@ def page(t):
             for n, desc, px in plats)
         return f'<div class="rubrique"><h3>{cat}</h3>' + (f'<p class="note">{note}</p>' if note else '') + lignes + '</div>'
     pdfs = ["bugsys-carte-restaurant.pdf", "bugsys-carte-bar-club.pdf"]
+    visuels = [f'<img src="{d}assets/img/grill-flammes.jpg" alt="{t['grill_alt']}" loading="lazy">', f'<img src="{d}assets/img/bar-cocktails.jpg" alt="{t["bar_alt"]}" loading="lazy">']
     carte = "".join(
-        f'<div class="volet"><p class="volet-titre">{titre} <span>{heures}</span></p><div class="carte">'
+        f'<div class="volet"><div class="volet-tete"><p class="volet-titre">{titre} <span>{heures}</span></p>{vis}</div><div class="carte">'
         + "".join(bloc(*r) for r in rubriques)
         + f'</div><a class="btn" href="{d}assets/cartes/{pdf}" download>{lien}</a></div>'
-        for (titre, heures, rubriques), pdf, lien in zip(CARTES[t["lang"]], pdfs, t["carte_pdf"]))
+        for (titre, heures, rubriques), pdf, lien, vis in zip(CARTES[t["lang"]], pdfs, t["carte_pdf"], visuels))
     rdv = "".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t["rdv"])
     classes = ["m-membre", "m-gold", "m-black"]
     membres = "".join(f'<div class="carte-membre {c}"><div class="nom">BUGSY’S</div><div class="niveau">{n.upper()}</div></div>' for c, n in zip(classes, t["niveaux"]))
@@ -396,13 +399,8 @@ def page(t):
 </div></div></section>
 
 <section class="section" id="carte"><div class="wrap">
-  <div class="carte-tete">
-    <div>
-      <p class="eyebrow">{t['carte_eyebrow']}</p>
-      <h2>{t['carte_titre']}</h2>
-    </div>
-    <img src="{d}assets/img/grill-flammes.jpg" alt="{t['grill_alt']}" loading="lazy">
-  </div>
+  <p class="eyebrow">{t['carte_eyebrow']}</p>
+  <h2>{t['carte_titre']}</h2>
   {carte}
   <p class="mention">{t['carte_prix']}</p>
 </div></section>
