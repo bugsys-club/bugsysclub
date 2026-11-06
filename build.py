@@ -147,8 +147,8 @@ CARTE_FR = [
     ("Spécialités", "", [
       ("Ndolé aux crevettes", "Feuilles de ndolé, arachides, crevettes, plantain mûr", "7 000"),
       ("Poulet DG", "Plantains mûrs, carottes, haricots verts", "7 500"),
-      ("Mafé de bœuf", "Sauce à l’arachide, riz blanc", "6 000"),
-      ("Poulet yassa", "Oignons confits au citron, riz blanc", "6 500"),
+      ("Mafé, au choix", "Sauce à l’arachide, riz blanc · bœuf ou poulet 6 000 · agneau 7 500", "dès 6 000"),
+      ("Yassa, au choix", "Oignons confits au citron, riz blanc · poulet 6 500 · poisson 8 000 · crevettes 9 000", "dès 6 500"),
       ("Poisson braisé entier", "Bar ou capitaine, alloco, bâton de manioc", "9 000"),
       ("Capitaine au mbongo tchobi", "Sauce noire aux épices, bâton de manioc", "9 000")]),
     ("Le grill", "Sauce au poivre blanc de Penja ou piment maison", [
@@ -199,8 +199,8 @@ CARTE_EN = [
     ("Local specialities", "", [
       ("Ndolé with prawns", "Ndolé leaves, peanuts, prawns, ripe plantain", "7 000"),
       ("Chicken DG", "Ripe plantain, carrots, green beans", "7 500"),
-      ("Beef mafé", "Peanut sauce, white rice", "6 000"),
-      ("Chicken yassa", "Onions slow-cooked with lemon, white rice", "6 500"),
+      ("Mafé, your choice", "Peanut sauce, white rice · beef or chicken 6 000 · lamb 7 500", "from 6 000"),
+      ("Yassa, your choice", "Onions slow-cooked with lemon, white rice · chicken 6 500 · fish 8 000 · prawns 9 000", "from 6 500"),
       ("Whole braised fish", "Sea bass or captain fish, alloco, cassava stick", "9 000"),
       ("Captain fish in mbongo tchobi", "Spiced black sauce, cassava stick", "9 000")]),
     ("The grill", "White Penja pepper sauce or house chilli", [
