@@ -72,6 +72,7 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroun",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Fondé par Guy Erick Tamokwe",
+        "facebook": "Suivez-nous sur Facebook",
         "recrut_eyebrow": "Nous recrutons",
         "recrut_titre": "Rejoins la maison",
         "recrut_intro": "Tu aimes la gastronomie, le jazz et les belles nuits ? Bugsy’s prépare son ouverture et constitue son équipe.",
@@ -139,6 +140,7 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroon",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Founded by Guy Erick Tamokwe",
+        "facebook": "Follow us on Facebook",
         "recrut_eyebrow": "We are hiring",
         "recrut_titre": "Join the house",
         "recrut_intro": "Love fine food, jazz and great nights out? Bugsy’s is getting ready to open and building its team.",
@@ -323,6 +325,8 @@ def formulaire(t):
   }});
   </script>'''
 
+FACEBOOK_URL = "https://www.facebook.com/share/19V8M8bjyL/"
+
 ANCRES = ["concept", "carte", "jazz", "galerie", "club", "danse", "membres", "contact"]
 PHOTOS = ["plateau", "poisson", "cocktail", "vin", "champagne"]
 
@@ -340,6 +344,7 @@ def jsonld(t, url):
         "address": {"@type": "PostalAddress", "addressLocality": "Yaoundé", "addressRegion": "Bastos", "addressCountry": "CM"},
         "inLanguage": t["lang"],
         "founder": {"@type": "Person", "name": "Guy Erick Tamokwe"},
+        "sameAs": [FACEBOOK_URL],
     }
     return json.dumps(data, ensure_ascii=False)
 
@@ -530,9 +535,10 @@ def page(t):
   {formulaire(t)}
   <p class="lieu">{t['lieu']}</p>
   <p class="fondateur">{t['fondateur']}</p>
+  <p class="reseaux"><a href="{FACEBOOK_URL}" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"></path></svg><span>{t['facebook']}</span></a></p>
 </div></section>
 </main>
-<footer class="footer">{t['footer']}</footer>
+<footer class="footer">{t['footer']} · <a href="{FACEBOOK_URL}" target="_blank" rel="noopener">Facebook</a></footer>
 </body>
 </html>
 """

@@ -245,3 +245,9 @@ a:hover { color: var(--or-clair); }
 .poste h3 { margin: 0 0 8px; font-family: var(--display); font-weight: 400; font-size: 26px; color: var(--ivoire); }
 .poste p { margin: 0; font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--discret); }
 @media (max-width: 760px) { .postes { grid-template-columns: 1fr; } }
+
+/* Réseaux */
+.reseaux { margin: 26px 0 0; }
+.reseaux a { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border: 1px solid var(--or); color: var(--or); text-decoration: none; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; }
+.reseaux a:hover { background: var(--or); color: var(--noir); }
+.footer a { color: var(--or); text-decoration: none; }
