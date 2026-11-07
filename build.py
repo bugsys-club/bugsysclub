@@ -433,7 +433,6 @@ def page(t):
 </script>
 <main id="top">
 <section class="hero"><div class="wrap"><div class="hero-frame"><div class="hero-inner">
-  {EVENTAIL}
   {LOGO}
   <h1>BUGSY’S</h1>
   <p class="club">SOCIAL CLUB</p>
