@@ -450,7 +450,7 @@ def page(t):
   <p class="eyebrow">{t['concept_eyebrow']}</p>
   <h2>{t['concept_titre']}</h2>
   <p class="intro">{t['concept_intro']}</p>
-  <figure class="ambiance"><img src="{d}assets/img/ambiance-salle.jpg" alt="{t['ambiance_alt']}" loading="lazy"><figcaption>{t['ambiance_legende']}</figcaption></figure>
+  <figure class="ambiance"><img src="{d}assets/img/ambiance-salle.jpg" alt="{t['ambiance_alt']}" loading="lazy"></figure>
   <div class="trois cinq">{temps}</div>
 </div></section>
 
