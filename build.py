@@ -73,6 +73,7 @@ TEXTES = {
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Fondé par Guy Erick Tamokwe",
         "facebook": "Suivez-nous sur Facebook",
+        "instagram": "Guy sur Instagram",
         "recrut_eyebrow": "Nous recrutons",
         "recrut_titre": "Rejoins la maison",
         "recrut_intro": "Tu aimes la gastronomie, le jazz et les belles nuits ? Bugsy’s prépare son ouverture et constitue son équipe.",
@@ -141,6 +142,7 @@ TEXTES = {
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Founded by Guy Erick Tamokwe",
         "facebook": "Follow us on Facebook",
+        "instagram": "Guy on Instagram",
         "recrut_eyebrow": "We are hiring",
         "recrut_titre": "Join the house",
         "recrut_intro": "Love fine food, jazz and great nights out? Bugsy’s is getting ready to open and building its team.",
@@ -326,6 +328,7 @@ def formulaire(t):
   </script>'''
 
 FACEBOOK_URL = "https://www.facebook.com/share/19V8M8bjyL/"
+INSTAGRAM_URL = "https://www.instagram.com/guyericktamokwe/"
 
 ANCRES = ["concept", "carte", "jazz", "galerie", "club", "danse", "membres", "contact"]
 PHOTOS = ["plateau", "poisson", "cocktail", "vin", "champagne"]
@@ -343,7 +346,7 @@ def jsonld(t, url):
         "servesCuisine": ["Steakhouse", "Seafood", "Cameroonian", "African", "French", "International"],
         "address": {"@type": "PostalAddress", "addressLocality": "Yaoundé", "addressRegion": "Bastos", "addressCountry": "CM"},
         "inLanguage": t["lang"],
-        "founder": {"@type": "Person", "name": "Guy Erick Tamokwe"},
+        "founder": {"@type": "Person", "name": "Guy Erick Tamokwe", "sameAs": [INSTAGRAM_URL]},
         "sameAs": [FACEBOOK_URL],
     }
     return json.dumps(data, ensure_ascii=False)
@@ -535,10 +538,10 @@ def page(t):
   {formulaire(t)}
   <p class="lieu">{t['lieu']}</p>
   <p class="fondateur">{t['fondateur']}</p>
-  <p class="reseaux"><a href="{FACEBOOK_URL}" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"></path></svg><span>{t['facebook']}</span></a></p>
+  <p class="reseaux"><a href="{FACEBOOK_URL}" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"></path></svg><span>{t['facebook']}</span></a><a href="{INSTAGRAM_URL}" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle></svg><span>{t['instagram']}</span></a></p>
 </div></section>
 </main>
-<footer class="footer">{t['footer']} · <a href="{FACEBOOK_URL}" target="_blank" rel="noopener">Facebook</a></footer>
+<footer class="footer">{t['footer']} · <a href="{FACEBOOK_URL}" target="_blank" rel="noopener">Facebook</a> · <a href="{INSTAGRAM_URL}" target="_blank" rel="noopener">Instagram</a></footer>
 </body>
 </html>
 """
