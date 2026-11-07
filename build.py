@@ -150,7 +150,7 @@ CARTE_FR = [
       ("Os à moelle rôti", "Fleur de sel, pain grillé, persillade", "6 000"),
       ("Salade Bugsy’s", "Avocat, crevettes de Kribi, mangue, vinaigrette passion", "7 000"),
       ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "4 500")]),
-    ("Le Steak House", "Chaque pièce est servie avec son os à moelle rôti · Sauces : poivre blanc de Penja · béarnaise · mbongo", [
+    ("Le Steak House", "Chaque pièce est servie avec son os à moelle rôti et la sauce Bugsy’s : herbes fraîches, njansang, poivre blanc de Penja · Aussi : béarnaise · mbongo", [
       ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle", "45 000"),
       ("Filet de bœuf, 250 g", "", "18 000"),
       ("Entrecôte tranchée, 300 g", "Servie en poêle, fleur de sel", "15 000"),
@@ -216,7 +216,7 @@ CARTE_EN = [
       ("Roasted bone marrow", "Sea salt, toasted bread, parsley and garlic", "6 000"),
       ("Bugsy’s salad", "Avocado, Kribi prawns, mango, passion fruit dressing", "7 000"),
       ("Soya", "Spiced grilled beef skewers, onions, chilli", "4 500")]),
-    ("The Steak House", "Every cut comes with its roasted marrow bone · Sauces: white Penja pepper · béarnaise · mbongo", [
+    ("The Steak House", "Every cut comes with its roasted marrow bone and the Bugsy’s sauce: fresh herbs, njansang, white Penja pepper · Also: béarnaise · mbongo", [
       ("Dry-aged rib of beef, 1 kg", "For two, carved at the table", "45 000"),
       ("Beef fillet, 250 g", "", "18 000"),
       ("Sliced rib-eye, 300 g", "Served in the pan, sea salt flakes", "15 000"),
