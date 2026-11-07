@@ -5,6 +5,15 @@ import os
 
 SITE_URL = "https://bugsys-club.github.io/bugsysclub/"
 
+EVENTAIL = """<svg class="eventail" viewBox="0 0 220 140" role="img" aria-label="Éventail art déco de Bugsy’s Social Club">
+  <defs><linearGradient id="orfan" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F3DE9C"/><stop offset="0.55" stop-color="#C9A45C"/><stop offset="1" stop-color="#8C6A2C"/></linearGradient></defs>
+  <g fill="url(#orfan)"><polygon points="88.9,111.8 17.9,90.9 23.1,77.2 90.1,108.6"/><polygon points="90.6,107.7 37.5,79.6 44.2,69.0 92.4,104.9"/><polygon points="93.0,104.0 35.9,57.0 46.1,46.4 95.3,101.6"/><polygon points="96.2,100.9 58.4,54.3 68.7,47.2 98.9,99.0"/><polygon points="99.9,98.5 65.7,32.8 79.2,27.1 102.9,97.2"/><polygon points="104.0,96.8 87.5,39.1 99.8,36.6 107.3,96.2"/><polygon points="108.3,96.1 102.7,22.3 117.3,22.3 111.7,96.1"/><polygon points="112.7,96.2 120.2,36.6 132.5,39.1 116.0,96.8"/><polygon points="117.1,97.2 140.8,27.1 154.3,32.8 120.1,98.5"/><polygon points="121.1,99.0 151.3,47.2 161.6,54.3 123.8,100.9"/><polygon points="124.7,101.6 173.9,46.4 184.1,57.0 127.0,104.0"/><polygon points="127.6,104.9 175.8,69.0 182.5,79.6 129.4,107.7"/><polygon points="129.9,108.6 196.9,77.2 202.1,90.9 131.1,111.8"/></g>
+  <path d="M92 118 A18 18 0 0 1 128 118 Z" fill="url(#orfan)"/>
+  <rect x="20" y="124" width="180" height="2.5" fill="url(#orfan)"/>
+  <rect x="50" y="131" width="120" height="1.2" fill="#C9A45C"/>
+</svg>"""
+
 LOGO = """<svg viewBox="0 0 220 220" role="img" aria-label="Monogramme BS de Bugsy’s Social Club">
   <defs><linearGradient id="or" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#F3DE9C"/><stop offset="0.45" stop-color="#C9A45C"/>
@@ -27,16 +36,18 @@ TEXTES = {
         "danse_styles": ["Afro", "Hip-hop", "Contemporain", "Salsa", "Street jazz", "Modern jazz"],
         "danse_rdv": [("Cours · du lundi au jeudi, en journée", "Tous niveaux, du premier pas au danseur confirmé."), ("Books photo", "Shootings pour les artistes et les compagnies : portraits, mouvement, scène.")],
         "danse_alts": ["Dos nu d’une danseuse sur fond noir, drapé rouge", "Danseuses et danseur de contemporain sur fond noir", "Duo de danse, bras levés", "Danseuse au sol sous une lumière cuivrée", "Danseuse en cambré, cheveux au sol", "Trois danseuses d’afro en plein air", "Danseuse au sol, jambe tendue vers le ciel", "Danseuse au corps peint devant un mur de graffitis", "Couple de salsa en mouvement, robe rouge sur le parquet"],
-        "sous": "Steak house & sea food · Yaoundé",
+        "sous": "Restaurant · Jazz · Art · Dance · Yaoundé",
         "accroche": "Un café le matin, une grande table le soir, un club la nuit.",
-        "cta": "Ouverture prochaine",
+        "cta": "Réserver une table",
         "concept_eyebrow": "Le concept",
-        "concept_titre": "Une adresse, trois temps",
-        "concept_intro": "Au cœur du quartier Bastos, Bugsy’s réunit sous le même toit un café, un steak house et un club, dans l’esprit des clubs américains des années 40.",
+        "concept_titre": "Une adresse, cinq univers",
+        "concept_intro": "Au cœur du quartier Bastos, Bugsy’s réunit sous le même toit un café, un steak house, un club, une galerie et une école de danse, dans l’esprit des clubs américains des années 40.",
         "temps": [
-            ("8h – 11h", "Le Café", "Espresso, café de l’Ouest camerounais, petit-déjeuner d’affaires."),
-            ("12h – 23h", "Le Restaurant", "Grill et fruits de mer, relevés de poivre de Penja et de sauces maison."),
-            ("Jeudi – samedi, 23h – 4h", "Le Club", "DJ sets funky, hip-hop et deep house : la salle du dîner devient la piste."),
+            ("8h – 11h", "Le matin", "Café et rendez-vous : espresso, café de l’Ouest, petit-déjeuner d’affaires."),
+            ("12h – 23h", "Le soir", "Steak house et fruits de mer, classiques du monde, pâtisserie française."),
+            ("Jeudi – samedi, 23h – 4h", "La nuit", "Club et soirées privées : DJ sets funky, hip-hop et deep house."),
+            ("Un vernissage par mois", "La galerie", "Art et culture : les œuvres de la collection, un nouvel accrochage chaque trimestre."),
+            ("Lundi – jeudi, en journée", "L’école de danse", "Cours tous niveaux, ateliers et books photo pour les artistes."),
         ],
         "galerie_alt": ["Grand plateau de viandes braisées, riz rouge et sauces maison", "Poisson braisé, salsa de poivrons et citron vert", "Cocktail servi dans une timbale en cuivre", "Verre de vin rouge au-dessus d’une table garnie", "Champagnes sur une table du lounge"],
         "racines_alt": ["Acacia solitaire dans la savane au coucher du soleil", "Barques de pêche colorées sur une plage africaine"],
@@ -63,7 +74,8 @@ TEXTES = {
         "club_titre": "Jazz and Night Club",
         "club_intro": "Du jeudi au samedi, de 23h à 4h : DJ sets funky, hip-hop et deep house, service bouteilles et entrée offerte aux clients du dîner.",
         "membres_eyebrow": "Membres",
-        "membres_titre": "Le cercle Bugsy’s",
+        "membres_titre": "Le Cercle Bugsy’s",
+        "membres_btn": "Rejoignez le Cercle Bugsy’s",
         "membres_intro": "Trois cartes pour les habitués du club. Les avantages de chaque niveau seront annoncés à l’ouverture.",
         "niveaux": ["Membre", "Gold", "Black"],
         "contact_eyebrow": "Contact",
@@ -96,16 +108,18 @@ TEXTES = {
         "danse_styles": ["Afro", "Hip-hop", "Contemporary", "Salsa", "Street jazz", "Modern jazz"],
         "danse_rdv": [("Classes · Monday to Thursday, daytime", "All levels, from first steps to experienced dancers."), ("Photo books", "Shoots for artists and dance companies: portraits, movement, stage.")],
         "danse_alts": ["Bare back of a dancer against black, red drape", "Contemporary dancers against a black background", "Dance duo, arms raised", "Dancer on the floor under copper light", "Dancer in a backbend, hair on the floor", "Three afro dancers outdoors", "Dancer on the floor, one leg raised to the sky", "Body-painted dancer against a graffiti wall", "Salsa couple in motion, red dress on the dance floor"],
-        "sous": "Steak house & sea food · Yaoundé",
+        "sous": "Restaurant · Jazz · Art · Dance · Yaoundé",
         "accroche": "A café by morning, a grand table by evening, a club by night.",
-        "cta": "Opening soon",
+        "cta": "Book a table",
         "concept_eyebrow": "The concept",
-        "concept_titre": "One address, three moments",
-        "concept_intro": "In the heart of Bastos, Bugsy’s brings a café, a steak house and a club under one roof, in the spirit of 1940s American supper clubs.",
+        "concept_titre": "One address, five worlds",
+        "concept_intro": "In the heart of Bastos, Bugsy’s brings a café, a steak house, a club, a gallery and a dance school under one roof, in the spirit of 1940s American supper clubs.",
         "temps": [
-            ("8am – 11am", "The Café", "Espresso, coffee from Cameroon’s West region, business breakfasts."),
-            ("Noon – 11pm", "The Restaurant", "Grill and seafood, with Penja pepper and house sauces."),
-            ("Thursday – Saturday, 11pm – 4am", "The Club", "Funky, hip-hop and deep house DJ sets: the dining room becomes the dance floor."),
+            ("8am – 11am", "Morning", "Coffee and meetings: espresso, West Cameroon coffee, business breakfasts."),
+            ("Noon – 11pm", "Evening", "Steak house and seafood, world classics, French pâtisserie."),
+            ("Thursday – Saturday, 11pm – 4am", "Night", "Club and private parties: funky, hip-hop and deep house DJ sets."),
+            ("One opening a month", "The gallery", "Art and culture: works from the collection, rehung every quarter."),
+            ("Monday – Thursday, daytime", "The dance school", "Classes for all levels, workshops and photo books for artists."),
         ],
         "galerie_alt": ["Platter of braised meats, red rice and house sauces", "Braised fish with pepper salsa and lime", "Cocktail served in a copper cup", "Glass of red wine above a laid table", "Champagne on a lounge table"],
         "racines_alt": ["Lone acacia tree on the savannah at sunset", "Colourful fishing boats on an African beach"],
@@ -132,7 +146,8 @@ TEXTES = {
         "club_titre": "Jazz and Night Club",
         "club_intro": "Thursday to Saturday, 11pm to 4am: funky, hip-hop and deep house DJ sets, bottle service and free entry for dinner guests.",
         "membres_eyebrow": "Members",
-        "membres_titre": "The Bugsy’s circle",
+        "membres_titre": "The Bugsy’s Circle",
+        "membres_btn": "Join the Bugsy’s Circle",
         "membres_intro": "Three cards for the club’s regulars. The benefits of each tier will be announced at the opening.",
         "niveaux": ["Member", "Gold", "Black"],
         "contact_eyebrow": "Contact",
@@ -418,19 +433,20 @@ def page(t):
 </script>
 <main id="top">
 <section class="hero"><div class="wrap"><div class="hero-frame"><div class="hero-inner">
-  {LOGO}
+  {EVENTAIL}
   <h1>BUGSY’S</h1>
   <p class="club">SOCIAL CLUB</p>
   <p class="sous">{t['sous']}</p>
+  <p class="signature">Eat · Drink · Jazz · Dance<span>Live the Experience</span></p>
   <p class="accroche">{t['accroche']}</p>
-  <a class="btn" href="#contact">{t['cta']}</a>
+  <a class="btn" href="#contact" data-objet="{t['form']['objets'][0]}">{t['cta']}</a>
 </div></div></div></section>
 
 <section class="section clair" id="concept"><div class="wrap">
   <p class="eyebrow">{t['concept_eyebrow']}</p>
   <h2>{t['concept_titre']}</h2>
   <p class="intro">{t['concept_intro']}</p>
-  <div class="trois">{temps}</div>
+  <div class="trois cinq">{temps}</div>
 </div></section>
 
 <section class="section"><div class="wrap"><div class="galerie">{galerie}</div></div></section>
@@ -515,6 +531,7 @@ def page(t):
   <h2>{t['membres_titre']}</h2>
   <p class="intro">{t['membres_intro']}</p>
   <div class="membres">{membres}</div>
+  <p class="membres-cta"><a class="btn" href="#contact" data-objet="{t['form']['objets'][2]}">{t['membres_btn']}</a></p>
 </div></section>
 
 <section class="section recrutement"><div class="wrap">

@@ -257,3 +257,14 @@ a:hover { color: var(--or-clair); }
 .footer-reseaux a { display: inline-flex; color: var(--or); }
 .footer-reseaux a:hover { color: var(--or-clair); }
 .footer-reseaux svg { width: 18px; height: 18px; }
+
+/* Éventail, signature, cinq univers */
+.hero svg.eventail { width: min(240px, 56vw); height: auto; margin: 0 auto 18px; }
+.hero .signature { margin: 22px 0 0; font-family: var(--serif); font-style: italic; font-size: clamp(26px, 3.6vw, 36px); line-height: 1.2; color: var(--or); }
+.hero .signature span { display: block; font-size: 0.8em; color: var(--or-clair); }
+.trois.cinq { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 28px; }
+.trois.cinq .temps h3 { font-size: 28px; }
+.trois.cinq .temps .heure { font-size: 12px; letter-spacing: 2px; }
+.membres-cta { margin: 40px 0 0; text-align: center; }
+.clair .btn { color: var(--bronze); border-color: var(--bronze); }
+.clair .btn:hover { background: var(--bronze); color: var(--ivoire); }
