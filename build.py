@@ -74,6 +74,7 @@ TEXTES = {
         "club_alt": "Peinture d’une danseuse en robe rouge tourbillonnante, à la lueur des bougies",
         "club_eyebrow": "Le club",
         "club_titre": "Jazz and Night Club",
+        "club_alts": ["Danseuse en paillettes, mains levées dans la lumière dorée", "Invitées en robes scintillantes, coupe de champagne à la main", "Silhouettes de danseurs dans une lumière orangée"],
         "club_intro": "Du jeudi au samedi, de 23h à 4h : DJ sets funky, hip-hop et deep house, service bouteilles et entrée offerte aux clients du dîner.",
         "membres_eyebrow": "Membres",
         "membres_titre": "Le Cercle Bugsy’s",
@@ -148,6 +149,7 @@ TEXTES = {
         "club_alt": "Painting of a dancer in a swirling red dress, by candlelight",
         "club_eyebrow": "The club",
         "club_titre": "Jazz and Night Club",
+        "club_alts": ["Dancer in sequins, hands raised in golden light", "Guests in sparkling dresses, champagne in hand", "Silhouettes of dancers in orange light"],
         "club_intro": "Thursday to Saturday, 11pm to 4am: funky, hip-hop and deep house DJ sets, bottle service and free entry for dinner guests.",
         "membres_eyebrow": "Members",
         "membres_titre": "The Bugsy’s Circle",
@@ -515,6 +517,7 @@ def page(t):
     <p class="eyebrow">{t['club_eyebrow']}</p>
     <h2>{t['club_titre']}</h2>
     <p class="intro">{t['club_intro']}</p>
+    <div class="club-photos">{"".join(f'<img src="{d}assets/img/{n}.jpg" alt="{al}" loading="lazy">' for n, al in zip(["club-mains", "club-champagne", "club-silhouettes"], t['club_alts']))}</div>
   </div>
 </div></div></section>
 
