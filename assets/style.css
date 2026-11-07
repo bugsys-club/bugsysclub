@@ -236,3 +236,12 @@ a:hover { color: var(--or-clair); }
 .volet-tete .volet-titre { margin: 0; }
 .volet-tete img { width: 200px; height: 260px; object-fit: cover; padding: 8px; background: var(--noir); border: 4px double var(--or); flex: none; }
 @media (max-width: 760px) { .volet-tete img { width: 110px; height: 144px; padding: 5px; } .volet-tete { gap: 16px; } }
+
+/* Nous recrutons */
+.recrutement { text-align: center; }
+.recrutement .intro { margin-inline: auto; }
+.postes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 0 0 36px; }
+.poste { border: 1px solid var(--filet); background: var(--noir-2); padding: 28px 22px; }
+.poste h3 { margin: 0 0 8px; font-family: var(--display); font-weight: 400; font-size: 26px; color: var(--ivoire); }
+.poste p { margin: 0; font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--discret); }
+@media (max-width: 760px) { .postes { grid-template-columns: 1fr; } }

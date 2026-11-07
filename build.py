@@ -72,10 +72,15 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroun",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Fondé par Guy Erick Tamokwe",
+        "recrut_eyebrow": "Nous recrutons",
+        "recrut_titre": "Rejoins la maison",
+        "recrut_intro": "Tu aimes la gastronomie, le jazz et les belles nuits ? Bugsy’s prépare son ouverture et constitue son équipe.",
+        "recrut_postes": [("Chef cuisinier", "Steak house, sea food et classiques du monde"), ("Serveurs et serveuses", "Service en salle, accueil des membres, élégance"), ("Barman ou barmaid", "Cocktails signature, bouteilles de collection")],
+        "recrut_btn": "Postuler",
         "partenaires_eyebrow": "Partenaires",
         "partenaires_texte": "Bugsy’s s’associe aux compagnies, aux festivals et aux maisons qui partagent sa vision de Yaoundé : la danse, le jazz et la création, au même endroit.",
         "partenaires_btn": "Devenir partenaire",
-        "form": {"nom": "Nom", "email": "E-mail", "objet": "Objet", "objets": ["Réservation", "Privatisation", "Carte de membre", "Partenariat", "Autre demande"], "message": "Message", "envoyer": "Envoyer", "merci": "Merci, votre message a bien été envoyé. Nous vous répondrons très vite.", "erreur": "L’envoi n’a pas abouti. Merci de réessayer dans un instant."},
+        "form": {"nom": "Nom", "email": "E-mail", "objet": "Objet", "objets": ["Réservation", "Privatisation", "Carte de membre", "Partenariat", "Candidature", "Autre demande"], "message": "Message", "envoyer": "Envoyer", "merci": "Merci, votre message a bien été envoyé. Nous vous répondrons très vite.", "erreur": "L’envoi n’a pas abouti. Merci de réessayer dans un instant."},
         "contact_intro_form": "Réservations, privatisations et cartes de membre : écrivez-nous, nous vous répondrons personnellement.",
     },
     "en": {
@@ -134,10 +139,15 @@ TEXTES = {
         "lieu": "Bastos · Yaoundé · Cameroon",
         "footer": "© Bugsy’s Social Club · Yaoundé",
         "fondateur": "Founded by Guy Erick Tamokwe",
+        "recrut_eyebrow": "We are hiring",
+        "recrut_titre": "Join the house",
+        "recrut_intro": "Love fine food, jazz and great nights out? Bugsy’s is getting ready to open and building its team.",
+        "recrut_postes": [("Head chef", "Steak house, seafood and world classics"), ("Waiters and waitresses", "Table service, welcoming members, elegance"), ("Bartender", "Signature cocktails, collector’s bottles")],
+        "recrut_btn": "Apply",
         "partenaires_eyebrow": "Partners",
         "partenaires_texte": "Bugsy’s works with the companies, festivals and houses that share its vision of Yaoundé: dance, jazz and creation, under one roof.",
         "partenaires_btn": "Become a partner",
-        "form": {"nom": "Name", "email": "Email", "objet": "Subject", "objets": ["Booking", "Private event", "Membership card", "Partnership", "Other enquiry"], "message": "Message", "envoyer": "Send", "merci": "Thank you, your message has been sent. We will reply very soon.", "erreur": "Your message could not be sent. Please try again in a moment."},
+        "form": {"nom": "Name", "email": "Email", "objet": "Subject", "objets": ["Booking", "Private event", "Membership card", "Partnership", "Job application", "Other enquiry"], "message": "Message", "envoyer": "Send", "merci": "Thank you, your message has been sent. We will reply very soon.", "erreur": "Your message could not be sent. Please try again in a moment."},
         "contact_intro_form": "Bookings, private events and membership cards: write to us and we will reply personally.",
     },
 }
@@ -497,6 +507,14 @@ def page(t):
   <h2>{t['membres_titre']}</h2>
   <p class="intro">{t['membres_intro']}</p>
   <div class="membres">{membres}</div>
+</div></section>
+
+<section class="section recrutement"><div class="wrap">
+  <p class="eyebrow">{t['recrut_eyebrow']}</p>
+  <h2>{t['recrut_titre']}</h2>
+  <p class="intro">{t['recrut_intro']}</p>
+  <div class="postes">{"".join(f'<div class="poste"><h3>{a}</h3><p>{b}</p></div>' for a, b in t['recrut_postes'])}</div>
+  <a class="btn" href="#contact" data-objet="{t['form']['objets'][4]}">{t['recrut_btn']}</a>
 </div></section>
 
 <section class="section clair partenaires"><div class="wrap">
