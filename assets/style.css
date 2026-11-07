@@ -268,3 +268,6 @@ a:hover { color: var(--or-clair); }
 .membres-cta { margin: 40px 0 0; text-align: center; }
 .clair .btn { color: var(--bronze); border-color: var(--bronze); }
 .clair .btn:hover { background: var(--bronze); color: var(--ivoire); }
+.hero svg.eventail { width: min(170px, 42vw); margin: 0 auto 6px; }
+.hero svg.eventail + svg { width: min(170px, 40vw); margin-top: 0; }
+.hero svg { display: block; }
