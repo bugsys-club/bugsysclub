@@ -251,3 +251,9 @@ a:hover { color: var(--or-clair); }
 .reseaux a { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border: 1px solid var(--or); color: var(--or); text-decoration: none; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; }
 .reseaux a:hover { background: var(--or); color: var(--noir); }
 .footer a { color: var(--or); text-decoration: none; }
+.reseaux a { width: 52px; height: 52px; padding: 0; justify-content: center; }
+.reseaux a svg { width: 22px; height: 22px; }
+.footer-reseaux { display: inline-flex; gap: 14px; margin-left: 14px; vertical-align: middle; }
+.footer-reseaux a { display: inline-flex; color: var(--or); }
+.footer-reseaux a:hover { color: var(--or-clair); }
+.footer-reseaux svg { width: 18px; height: 18px; }
