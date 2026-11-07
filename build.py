@@ -41,6 +41,8 @@ TEXTES = {
         "cta": "Réserver une table",
         "concept_eyebrow": "Le concept",
         "concept_titre": "Une adresse, cinq univers",
+        "ambiance_alt": "La salle de Bugsy’s : banquettes de velours rouge, lustre, scène et piano à queue",
+        "ambiance_legende": "Vue d’ambiance du projet",
         "concept_intro": "Au cœur du quartier Bastos, Bugsy’s réunit sous le même toit un café, un steak house, un club, une galerie et une école de danse, dans l’esprit des clubs américains des années 40.",
         "temps": [
             ("8h – 11h", "Le matin", "Café et rendez-vous : espresso, café de l’Ouest, petit-déjeuner d’affaires."),
@@ -113,6 +115,8 @@ TEXTES = {
         "cta": "Book a table",
         "concept_eyebrow": "The concept",
         "concept_titre": "One address, five worlds",
+        "ambiance_alt": "The Bugsy’s dining room: red velvet chairs, chandelier, stage and grand piano",
+        "ambiance_legende": "Design concept view",
         "concept_intro": "In the heart of Bastos, Bugsy’s brings a café, a steak house, a club, a gallery and a dance school under one roof, in the spirit of 1940s American supper clubs.",
         "temps": [
             ("8am – 11am", "Morning", "Coffee and meetings: espresso, West Cameroon coffee, business breakfasts."),
@@ -446,6 +450,7 @@ def page(t):
   <p class="eyebrow">{t['concept_eyebrow']}</p>
   <h2>{t['concept_titre']}</h2>
   <p class="intro">{t['concept_intro']}</p>
+  <figure class="ambiance"><img src="{d}assets/img/ambiance-salle.jpg" alt="{t['ambiance_alt']}" loading="lazy"><figcaption>{t['ambiance_legende']}</figcaption></figure>
   <div class="trois cinq">{temps}</div>
 </div></section>
 
