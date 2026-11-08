@@ -291,3 +291,10 @@ a:hover { color: var(--or-clair); }
 .lien-pdf { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--discret); text-decoration: underline; text-underline-offset: 4px; }
 .lien-pdf:hover { color: var(--or); }
 .credit-da { margin: 6px 0 0; font-family: var(--serif); font-style: italic; font-size: 20px; line-height: 1.45; color: var(--or-clair); }
+
+/* Citation */
+.citation { margin: 0 0 32px; padding: 4px 0 4px 24px; border-left: 2px solid var(--or); }
+.citation p { margin: 0; font-family: var(--serif); font-style: italic; font-size: 24px; line-height: 1.45; color: var(--ivoire); }
+.citation footer { margin-top: 10px; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--or); }
+.citation footer::before { content: "— "; }
+.citation .trad { margin-top: 14px; font-size: 18px; color: var(--discret); }
