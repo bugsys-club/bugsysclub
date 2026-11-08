@@ -531,7 +531,7 @@ def page(t):
       <p class="eyebrow">{t['danse_eyebrow']}</p>
       <h2>{t['danse_titre']}</h2>
       <p class="intro">{t['danse_intro']}</p>
-      <blockquote class="citation" lang="en"><p>“Dance is bigger than the physical body. When you extend your arm, it doesn’t stop at the end of your fingers, because you’re dancing bigger than that, you’re dancing spirit.”</p><footer>Judith Jamison</footer>{t['citation_trad']}</blockquote>
+      <blockquote class="citation" lang="en"><p>“Dance is bigger than the physical body. When you extend your arm, it doesn’t stop at the end of your fingers, because you’re dancing bigger than that, you’re dancing spirit.”</p><footer>Judith Jamison</footer></blockquote>
       <ul class="styles">{"".join(f'<li>{x}</li>' for x in t['danse_styles'])}</ul>
       {"".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t['danse_rdv'])}
     </div>
