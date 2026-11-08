@@ -389,7 +389,7 @@ def page(t):
     carte = "".join(
         f'<div class="volet"><div class="volet-tete"><p class="volet-titre">{titre} <span>{heures}</span></p>{vis}</div><div class="carte">'
         + "".join(bloc(*r) for r in rubriques)
-        + f'</div><a class="btn" href="{d}assets/cartes/{pdf}" download>{lien}</a></div>'
+        + f'</div><div class="volet-actions"><a class="btn btn-plein" href="#contact" data-objet="{t["form"]["objets"][0]}">{t["cta"]}</a><a class="lien-pdf" href="{d}assets/cartes/{pdf}" download>{lien}</a></div></div>'
         for (titre, heures, rubriques), pdf, lien, vis in zip(CARTES[t["lang"]], pdfs, t["carte_pdf"], visuels))
     rdv = "".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t["rdv"])
     classes = ["m-membre", "m-gold", "m-black"]
@@ -445,7 +445,7 @@ def page(t):
   <p class="sous">{t['sous']}</p>
   <p class="signature">Eat · Drink · Jazz · Dance<span>Live the Experience</span></p>
   <p class="accroche">{t['accroche']}</p>
-  <a class="btn" href="#contact" data-objet="{t['form']['objets'][0]}">{t['cta']}</a>
+  <a class="btn btn-plein" href="#contact" data-objet="{t['form']['objets'][0]}">{t['cta']}</a>
 </div></div></div></section>
 
 <section class="section clair" id="concept"><div class="wrap">

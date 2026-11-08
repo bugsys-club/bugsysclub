@@ -282,3 +282,11 @@ a:hover { color: var(--or-clair); }
 .club-photos { display: grid; grid-template-columns: repeat(3, 120px); gap: 12px; margin-top: 28px; }
 .club-photos img { width: 120px; height: 150px; object-fit: cover; border: 1px solid var(--filet); }
 @media (max-width: 760px) { .club-photos { grid-template-columns: repeat(3, 96px); gap: 8px; justify-content: center; } .club-photos img { width: 96px; height: 120px; } }
+
+/* Bouton Réserver une table, plein */
+.btn.btn-plein { background: var(--ivoire); color: var(--noir); border-color: var(--ivoire); font-weight: 600; }
+.btn.btn-plein:hover { background: var(--or); border-color: var(--or); color: var(--noir); }
+.volet-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 18px; }
+.volet-actions .btn { margin-top: 0; }
+.lien-pdf { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--discret); text-decoration: underline; text-underline-offset: 4px; }
+.lien-pdf:hover { color: var(--or); }
