@@ -182,9 +182,9 @@ CARTE_FR = [
     ("Bienvenue", "Notre rituel, à l’arrivée et au départ", [
       ("Rhum arrangé maison", "Offert à chaque convive", "offert")]),
     ("Pour commencer", "", [
-      ("Os à moelle rôti", "Fleur de sel, pain grillé, persillade", "6 000"),
       ("Salade Bugsy’s", "Avocat, crevettes de Kribi, mangue, vinaigrette passion", "7 000"),
-      ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "4 500")]),
+      ("Soya", "Brochettes de bœuf épicées au grill, oignons, piment", "4 500"),
+      ("Os à moelle rôti", "Fleur de sel, pain grillé, persillade", "6 000")]),
     ("Le Steak House", "Chaque pièce est servie avec son os à moelle rôti et la sauce Bugsy’s : herbes fraîches, njansang, poivre blanc de Penja · Aussi : béarnaise · mbongo", [
       ("Côte de bœuf maturée, 1 kg", "Pour deux, découpée en salle", "45 000"),
       ("Filet de bœuf, 250 g", "", "18 000"),
@@ -248,9 +248,9 @@ CARTE_EN = [
     ("Welcome", "Our ritual, on arrival and on leaving", [
       ("House-infused rum", "On the house for every guest", "complimentary")]),
     ("To start", "", [
-      ("Roasted bone marrow", "Sea salt, toasted bread, parsley and garlic", "6 000"),
       ("Bugsy’s salad", "Avocado, Kribi prawns, mango, passion fruit dressing", "7 000"),
-      ("Soya", "Spiced grilled beef skewers, onions, chilli", "4 500")]),
+      ("Soya", "Spiced grilled beef skewers, onions, chilli", "4 500"),
+      ("Roasted bone marrow", "Sea salt, toasted bread, parsley and garlic", "6 000")]),
     ("The Steak House", "Every cut comes with its roasted marrow bone and the Bugsy’s sauce: fresh herbs, njansang, white Penja pepper · Also: béarnaise · mbongo", [
       ("Dry-aged rib of beef, 1 kg", "For two, carved at the table", "45 000"),
       ("Beef fillet, 250 g", "", "18 000"),
