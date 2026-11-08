@@ -31,6 +31,7 @@ TEXTES = {
         "description": "Bugsy’s Social Club, à Bastos, Yaoundé : café le matin, steak house et fruits de mer le jour, soul jazz et musiques africaines le jeudi, DJ sets funky, hip-hop et deep house la nuit.",
         "nav": ["Le concept", "La carte", "Le jazz", "La galerie", "Le club", "La danse", "Membres", "Contact"],
         "danse_eyebrow": "L’école de danse",
+        "danse_jade": "Books réalisés sous la direction artistique de Jade Tamokwe, styliste et directrice artistique basée à Paris.",
         "danse_titre": "Danse et books",
         "danse_intro": "Le jour, la piste du club devient un studio. On y apprend, on y répète, et on y fait les images qui font connaître les danseurs.",
         "danse_styles": ["Afro", "Hip-hop", "Contemporain", "Salsa", "Street jazz", "Modern jazz"],
@@ -106,6 +107,7 @@ TEXTES = {
         "description": "Bugsy’s Social Club, in Bastos, Yaoundé: a café by morning, a steak house & seafood restaurant by day, soul jazz and African music on Thursdays, funky, hip-hop and deep house DJ sets by night.",
         "nav": ["The concept", "The menu", "Jazz", "The gallery", "The club", "Dance", "Members", "Contact"],
         "danse_eyebrow": "The dance school",
+        "danse_jade": "Photo books created under the art direction of Jade Tamokwe, a Paris-based stylist and art director.",
         "danse_titre": "Dance and books",
         "danse_intro": "By day, the club floor becomes a studio. Dancers come to learn, to rehearse, and to make the images that get them seen.",
         "danse_styles": ["Afro", "Hip-hop", "Contemporary", "Salsa", "Street jazz", "Modern jazz"],
@@ -529,6 +531,7 @@ def page(t):
       <p class="intro">{t['danse_intro']}</p>
       <ul class="styles">{"".join(f'<li>{x}</li>' for x in t['danse_styles'])}</ul>
       {"".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t['danse_rdv'])}
+      <p class="credit-da">{t['danse_jade']}</p>
     </div>
     <div class="danse-photos">{"".join(f'<img src="{d}assets/img/{n}.jpg" alt="{a}" loading="lazy">' for n, a in zip(["danse-dos", "danse-contemporain", "danse-duo", "danse-sol", "danse-solo", "danse-cambre", "danse-graffiti", "danse-afro", "danse-salsa"], t['danse_alts']))}</div>
   </div>

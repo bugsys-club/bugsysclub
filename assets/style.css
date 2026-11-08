@@ -290,3 +290,4 @@ a:hover { color: var(--or-clair); }
 .volet-actions .btn { margin-top: 0; }
 .lien-pdf { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--discret); text-decoration: underline; text-underline-offset: 4px; }
 .lien-pdf:hover { color: var(--or); }
+.credit-da { margin: 6px 0 0; font-family: var(--serif); font-style: italic; font-size: 20px; line-height: 1.45; color: var(--or-clair); }
