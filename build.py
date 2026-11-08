@@ -531,7 +531,6 @@ def page(t):
       <p class="intro">{t['danse_intro']}</p>
       <ul class="styles">{"".join(f'<li>{x}</li>' for x in t['danse_styles'])}</ul>
       {"".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t['danse_rdv'])}
-      <p class="credit-da">{t['danse_jade']}</p>
     </div>
     <div class="danse-photos">{"".join(f'<img src="{d}assets/img/{n}.jpg" alt="{a}" loading="lazy">' for n, a in zip(["danse-dos", "danse-contemporain", "danse-duo", "danse-sol", "danse-solo", "danse-cambre", "danse-graffiti", "danse-afro", "danse-salsa"], t['danse_alts']))}</div>
   </div>
