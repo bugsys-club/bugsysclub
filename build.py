@@ -97,6 +97,7 @@ TEXTES = {
         "recrut_postes": [("Chef cuisinier", "Steak house, sea food et classiques du monde"), ("Serveurs et serveuses", "Service en salle, accueil des membres, élégance"), ("Barman ou barmaid", "Cocktails signature, bouteilles de collection")],
         "recrut_btn": "Postuler",
         "partenaires_eyebrow": "Partenaires",
+        "arche_alt": "L’arche « I Love My Country Cameroon » à Yaoundé, de nuit",
         "partenaires_texte": "Bugsy’s s’associe aux compagnies, aux festivals et aux maisons qui partagent sa vision de Yaoundé : la danse, le jazz et la création, au même endroit.",
         "partenaires_btn": "Devenir partenaire",
         "form": {"nom": "Nom", "email": "E-mail", "objet": "Objet", "objets": ["Réservation", "Privatisation", "Carte de membre", "Partenariat", "Candidature", "Autre demande"], "message": "Message", "envoyer": "Envoyer", "merci": "Merci, votre message a bien été envoyé. Nous vous répondrons très vite.", "erreur": "L’envoi n’a pas abouti. Merci de réessayer dans un instant."},
@@ -174,6 +175,7 @@ TEXTES = {
         "recrut_postes": [("Head chef", "Steak house, seafood and world classics"), ("Waiters and waitresses", "Table service, welcoming members, elegance"), ("Bartender", "Signature cocktails, collector’s bottles")],
         "recrut_btn": "Apply",
         "partenaires_eyebrow": "Partners",
+        "arche_alt": "The “I Love My Country Cameroon” arch in Yaoundé at night",
         "partenaires_texte": "Bugsy’s works with the companies, festivals and houses that share its vision of Yaoundé: dance, jazz and creation, under one roof.",
         "partenaires_btn": "Become a partner",
         "form": {"nom": "Name", "email": "Email", "objet": "Subject", "objets": ["Booking", "Private event", "Membership card", "Partnership", "Job application", "Other enquiry"], "message": "Message", "envoyer": "Send", "merci": "Thank you, your message has been sent. We will reply very soon.", "erreur": "Your message could not be sent. Please try again in a moment."},
@@ -557,6 +559,7 @@ def page(t):
 
 <section class="section clair partenaires"><div class="wrap">
   <p class="eyebrow">{t['partenaires_eyebrow']}</p>
+  <img class="partenaires-photo" src="{d}assets/img/yaounde-arche.jpg" alt="{t['arche_alt']}" loading="lazy">
   <p class="partenaires-texte">{t['partenaires_texte']}</p>
   <a class="btn" href="#contact" data-objet="{t['form']['objets'][3]}">{t['partenaires_btn']}</a>
 </div></section>

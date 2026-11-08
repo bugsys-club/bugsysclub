@@ -298,3 +298,4 @@ a:hover { color: var(--or-clair); }
 .citation footer { margin-top: 10px; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--or); }
 .citation footer::before { content: "— "; }
 .citation .trad { margin-top: 14px; font-size: 18px; color: var(--discret); }
+.partenaires-photo { display: block; width: 220px; height: 138px; object-fit: cover; margin: 0 auto 24px; padding: 6px; background: var(--noir); border: 3px double var(--bronze); }
