@@ -31,6 +31,7 @@ TEXTES = {
         "description": "Bugsy’s Social Club, à Bastos, Yaoundé : café le matin, steak house et fruits de mer le jour, soul jazz et musiques africaines le jeudi, DJ sets funky, hip-hop et deep house la nuit.",
         "nav": ["Le concept", "La carte", "Le jazz", "La galerie", "Le club", "La danse", "Membres", "Contact"],
         "danse_eyebrow": "L’école de danse",
+        "danse_credit": "Direction artistique et stylisme : Jade Tamokwe",
         "citation_trad": '<p class="trad" lang="fr">« La danse est plus grande que le corps. Quand tu tends le bras, il ne s’arrête pas au bout de tes doigts : tu danses plus grand que cela, tu danses l’esprit. »</p>',
         "danse_jade": "Books réalisés sous la direction artistique de Jade Tamokwe, styliste et directrice artistique basée à Paris.",
         "danse_titre": "Danse et books",
@@ -109,6 +110,7 @@ TEXTES = {
         "description": "Bugsy’s Social Club, in Bastos, Yaoundé: a café by morning, a steak house & seafood restaurant by day, soul jazz and African music on Thursdays, funky, hip-hop and deep house DJ sets by night.",
         "nav": ["The concept", "The menu", "Jazz", "The gallery", "The club", "Dance", "Members", "Contact"],
         "danse_eyebrow": "The dance school",
+        "danse_credit": "Art direction and styling: Jade Tamokwe",
         "citation_trad": "",
         "danse_jade": "Photo books created under the art direction of Jade Tamokwe, a Paris-based stylist and art director.",
         "danse_titre": "Dance and books",
@@ -537,7 +539,10 @@ def page(t):
       <ul class="styles">{"".join(f'<li>{x}</li>' for x in t['danse_styles'])}</ul>
       {"".join(f'<p class="rdv"><b>{a}</b>{b}</p>' for a, b in t['danse_rdv'])}
     </div>
+    <div class="danse-bloc">
     <div class="danse-photos">{"".join(f'<img src="{d}assets/img/{n}.jpg" alt="{a}" loading="lazy">' for n, a in zip(["danse-dos", "danse-contemporain", "danse-duo", "danse-sol", "danse-solo", "danse-cambre", "danse-graffiti", "danse-afro", "danse-salsa"], t['danse_alts']))}</div>
+    <p class="credit-photos">{t['danse_credit']}</p>
+    </div>
   </div>
 </div></section>
 
