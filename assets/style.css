@@ -306,3 +306,8 @@ a:hover { color: var(--or-clair); }
 .logos-partenaires { margin: 30px auto 6px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .logos-partenaires p { margin: 0; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--bronze); }
 .logos-partenaires img { width: 96px; height: auto; display: block; }
+.logos-rangee { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.logos-rangee a { text-decoration: none; }
+.logo-nomme { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.logos-partenaires .logo-nomme img { width: 150px; }
+.logo-nomme span { font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #1a1612; }
