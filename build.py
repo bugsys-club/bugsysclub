@@ -568,7 +568,7 @@ def page(t):
   <p class="eyebrow">{t['partenaires_eyebrow']}</p>
   <img class="partenaires-photo" src="{d}assets/img/yaounde-arche.jpg" alt="{t['arche_alt']}" loading="lazy">
   <p class="partenaires-texte">{t['partenaires_texte']}</p>
-  <div class="logos-partenaires"><p>{t['partenaires_avec']}</p><div class="logos-rangee"><a href="https://artmovesafrica.org/" target="_blank" rel="noopener"><img src="{d}assets/img/logo-art-moves-africa.jpg" alt="Art Moves Africa" loading="lazy"></a><a class="logo-nomme" href="https://princeclausfund.org/" target="_blank" rel="noopener"><img src="{d}assets/img/logo-prince-claus-fund.jpg" alt="" loading="lazy"><span>Prince Claus Fund</span></a></div></div>
+  <div class="logos-partenaires"><p>{t['partenaires_avec']}</p><div class="logos-rangee"><a href="https://artmovesafrica.org/" target="_blank" rel="noopener"><img src="{d}assets/img/logo-art-moves-africa.jpg" alt="Art Moves Africa" loading="lazy"></a><a class="logo-nomme" href="https://princeclausfund.org/" target="_blank" rel="noopener"><img src="{d}assets/img/logo-prince-claus-fund.jpg" alt="" loading="lazy"><span>Prince Claus Fund</span></a><a href="https://ecoledessables.org/" target="_blank" rel="noopener"><img class="logo-eds" src="{d}assets/img/logo-ecole-des-sables.jpg" alt="École des Sables, Germaine Acogny" loading="lazy"></a></div></div>
   <a class="btn" href="#contact" data-objet="{t['form']['objets'][3]}">{t['partenaires_btn']}</a>
 </div></section>
 
