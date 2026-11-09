@@ -301,3 +301,4 @@ a:hover { color: var(--or-clair); }
 .partenaires-photo { display: block; width: 220px; height: 138px; object-fit: cover; margin: 0 auto 24px; padding: 6px; background: var(--noir); border: 3px double var(--bronze); }
 .danse-bloc { justify-self: center; display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .credit-photos { margin: 0; max-width: 384px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--discret); text-align: center; }
+.footer-credit { margin: 14px 0 0; font-size: 11px; letter-spacing: 2px; color: #8a7d62; }
