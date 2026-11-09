@@ -98,6 +98,7 @@ TEXTES = {
         "recrut_postes": [("Chef cuisinier", "Steak house, sea food et classiques du monde"), ("Serveurs et serveuses", "Service en salle, accueil des membres, élégance"), ("Barman ou barmaid", "Cocktails signature, bouteilles de collection")],
         "recrut_btn": "Postuler",
         "partenaires_eyebrow": "Partenaires",
+        "partenaires_avec": "En partenariat avec",
         "arche_alt": "L’arche « I Love My Country Cameroon » à Yaoundé, de nuit",
         "partenaires_texte": "Bugsy’s s’associe aux compagnies, aux festivals et aux maisons qui partagent sa vision de Yaoundé : la danse, le jazz et la création, au même endroit.",
         "partenaires_btn": "Devenir partenaire",
@@ -177,6 +178,7 @@ TEXTES = {
         "recrut_postes": [("Head chef", "Steak house, seafood and world classics"), ("Waiters and waitresses", "Table service, welcoming members, elegance"), ("Bartender", "Signature cocktails, collector’s bottles")],
         "recrut_btn": "Apply",
         "partenaires_eyebrow": "Partners",
+        "partenaires_avec": "In partnership with",
         "arche_alt": "The “I Love My Country Cameroon” arch in Yaoundé at night",
         "partenaires_texte": "Bugsy’s works with the companies, festivals and houses that share its vision of Yaoundé: dance, jazz and creation, under one roof.",
         "partenaires_btn": "Become a partner",
@@ -566,6 +568,7 @@ def page(t):
   <p class="eyebrow">{t['partenaires_eyebrow']}</p>
   <img class="partenaires-photo" src="{d}assets/img/yaounde-arche.jpg" alt="{t['arche_alt']}" loading="lazy">
   <p class="partenaires-texte">{t['partenaires_texte']}</p>
+  <div class="logos-partenaires"><p>{t['partenaires_avec']}</p><a href="https://artmovesafrica.org/" target="_blank" rel="noopener"><img src="{d}assets/img/logo-art-moves-africa.jpg" alt="Art Moves Africa" loading="lazy"></a></div>
   <a class="btn" href="#contact" data-objet="{t['form']['objets'][3]}">{t['partenaires_btn']}</a>
 </div></section>
 
